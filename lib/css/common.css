@@ -1,0 +1,91 @@
+/* 共通 */
+a {
+    text-decoration: none;
+    transition: .2s;
+}
+
+.inner {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+strong{
+    font-size:20px;
+}
+
+/* ヘッダー */
+.header{
+    background-color:#ffffff;
+}
+
+.header_container > .inner{
+    display:flex;
+}
+
+.headerLeft h1{
+    color:#222;
+    text-shadow:2px 2px 3px #555;
+    font-size:40px;
+    z-index:10;
+    padding: 20px 0px 20px 60px;
+    background-image: url(../images/logo01.png);
+    background-position: 0% 50%;
+    background-size: 80px 75px;
+    background-repeat: no-repeat;
+}
+
+.headerRight{
+    margin-left:auto;
+}
+
+.header_nav ul{
+    display: flex;
+    padding: 20px 0px;
+}
+
+.header_nav ul li a {
+    display: block;
+    padding:0 20px;
+    height: 30px;
+    color: #222;
+    text-align: center;
+    line-height: 30px;
+}
+
+.header_nav ul li a:hover{
+    border-bottom:1px solid blue;
+}
+
+/* フッター */
+.footer_container{
+    display:flex;
+    margin:0 150px 50px;
+}
+
+.footer_nav ul{
+    display: flex;
+    padding: 20px 0px;
+}
+
+.footer_nav ul li a {
+    display: block;
+    padding:0 20px;
+    height: 30px;
+    color: #222;
+    text-align: center;
+    line-height: 30px;
+}
+
+.footer_nav ul li a:hover{
+    border-bottom:1px solid blue;
+}
+
+.about{
+    margin-left:auto;
+    margin-top: 30px;
+}
+
+.copyright{
+    text-align: center;
+}

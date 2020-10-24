@@ -1,0 +1,61 @@
+/* ヘッダーロゴ */
+.header_logo_top h1{
+    color:#96fff5;
+    text-shadow:2px 2px 3px #f51818;
+    font-size:40px;
+    position: absolute;
+    top: 30px;
+    left:70px;
+    z-index:10;
+    padding: 20px 70px;
+    background-image: url(../images/logo01.png);
+    background-position: 0% 50%;
+    background-size: 80px 75px;
+    background-repeat: no-repeat;
+}
+
+/* ヘッダーナビ */
+.header_nav_top ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    background-color: #222;
+}
+
+.header_nav_top ul li {
+    width: calc((100% - 5px)/2); 
+}
+
+.header_nav_top ul li a {
+    display: block;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-right: 1px #fff solid;
+}
+
+.header_nav_top ul li:last-child a {
+    border-right: none;
+}
+
+.header_nav_top ul li a:hover{
+    color:#ff5000;
+}
+
+/* スライド */
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 30px;
+}
+
+.bx-wrapper {
+    background-color: transparent;
+    margin: 0px auto;
+    border: none;
+    box-shadow: none;
+}
+.bx-wrapper img {
+    display: block;
+    margin: 0px auto;
+}
