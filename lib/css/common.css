@@ -4,15 +4,20 @@ a {
     transition: .2s;
 }
 
-.inner {
-    max-width: 1000px;
+.inner,.cantainer {
+    max-width: 960px;
     width: 100%;
     margin: 0 auto;
 }
 
 strong{
-    font-size:20px;
+    font-size: 120%;
 }
+
+small {
+    font-size: 80%;
+}
+
 
 /* ヘッダー */
 .header{
@@ -88,4 +93,17 @@ strong{
 
 .copyright{
     text-align: center;
+}
+
+/* コンテンツ */
+.container{
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.contents{
+    background: #e7e7e7;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
 }
