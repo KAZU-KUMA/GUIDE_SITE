@@ -1,4 +1,8 @@
 /* 共通 */
+body{
+/* font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", YuGothic, "Yu Gothic", "Segoe UI", Verdana, Meiryo, sans-serif; */
+}
+
 a {
     text-decoration: none;
     transition: .2s;
@@ -10,12 +14,28 @@ a {
     margin: 0 auto;
 }
 
+.container{
+  padding-bottom:20px;
+}
+
 strong{
     font-size: 120%;
 }
 
 small {
     font-size: 80%;
+}
+
+dl{
+    padding-top:1em;
+}
+
+dd{
+    padding:0.4em 0;
+}
+
+ul, li{
+    list-style: none;
 }
 
 .title{
