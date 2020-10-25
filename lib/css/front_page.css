@@ -59,3 +59,28 @@
     display: block;
     margin: 0px auto;
 }
+
+
+.noticeBox {
+    margin-bottom: 40px;
+    border: 1px #c3c3c3 solid;
+    background-color: #fff;
+}
+
+.noticeBox .txtArea {
+    padding: 15px 30px 10px;
+    text-align: center;
+}
+
+.noticeBox h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding: 6px 0;
+    background-color: #222;
+}
+
+.top_news{
+    padding: 10px;
+}
