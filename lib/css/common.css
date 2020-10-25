@@ -202,3 +202,53 @@ table {
     border-top: 1px solid #222;
     border-bottom: 1px solid #222;
 }
+
+/* サイドバー */
+
+.side_nav{
+position: absolute;
+top:150px;
+left:200px;
+}
+
+aside .listArea {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 2%;
+    width: 150px;
+}
+
+aside .listArea ul li {
+    font-size: 1.2rem;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    list-style-type: square
+}
+
+/* パンくずリスト */
+
+.breadcrumb li {
+    color: #000;
+    display: inline;
+    list-style: none;
+}
+s
+.breadcrumb li a {
+    color:#222;
+}
+
+.breadcrumb li a:hover {
+    color:#555;
+}
+
+.breadcrumb li:after {
+    content: '>';
+    padding: 0 5px 0 10px;
+    color: #222;
+}
+
+.breadcrumb li:last-child::after {
+    content: normal;
+}
+

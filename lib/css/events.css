@@ -48,28 +48,6 @@ color:#d66800;
     margin:20px 0;
 }
 
-.btnArea{
-    display:flex;
-    justify-content: space-around;
-    margin-right:15px;
-}
-
-
-.btn a{
-    display: block;
-    width: 280px;
-    height: 60px;
-    line-height: 55px;
-    color: #000;
-    font-weight: 700;
-    text-align: center;
-    border: 1px #5a5a5a solid;
-}
-
-.btn a:hover{
-    color: #fff;
-    background-color: #111;
-}
 
 /* ページネーション */
 ul.pagination {
@@ -100,7 +78,56 @@ div.center {
     text-align: center;
 }
 
-
 .event_info{
  margin-top: 20px;
+}
+
+
+/* プルダウンメニュー */
+
+  .primary_nav > li {
+    float:left;
+    position:relative;
+    margin:15px;
+  }
+
+  .secondary_nav {
+    position:absolute;
+    width:280px;
+    display:none;
+    z-index:10;
+  }
+  .secondary_nav li a {
+    display:block;
+    height:50px;
+    padding:0 20px;
+    line-height:50px;
+    background-color:#fbf8f1;
+    color:black;
+    border-bottom: 1px solid #e9e4d9;
+    transition: all 0.5s;
+    text-align: center;
+  }
+  .secondary_nav li:last-child a {
+    border: none;
+  }
+  .secondary_nav li a:hover {
+    background-color: #d6eefa;
+  }
+
+.btn{
+display: block;
+width: 280px;
+height: 60px;
+line-height: 55px;
+color: #000;
+font-weight: 700;
+text-align: center;
+border: 1px #5a5a5a solid;
+background-color: #fff;
+}
+
+.btn:hover{
+color: #fff;
+background-color: #111;
 }
