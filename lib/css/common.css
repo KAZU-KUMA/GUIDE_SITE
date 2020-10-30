@@ -227,13 +227,12 @@ aside .listArea ul li {
 }
 
 /* パンくずリスト */
-
 .breadcrumb li {
     color: #000;
     display: inline;
     list-style: none;
 }
-s
+
 .breadcrumb li a {
     color:#222;
 }
