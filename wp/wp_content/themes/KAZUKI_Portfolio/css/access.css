@@ -1,0 +1,13 @@
+.map, .mapText{
+  /* display: inline-block; */
+}
+.map{
+  float:left;
+}
+.map_title{
+  margin:10px 0;
+}
+.mapText{
+  margin-bottom:20px;
+  float:right;
+}
