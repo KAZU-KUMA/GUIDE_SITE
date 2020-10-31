@@ -25,9 +25,8 @@
         </p>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <!-- <script src="./lib/js/scrpt.js" type="text/javascript"></script> -->
+
+    <script src="<?=get_template_directory_uri();?>/js/scrpt.js" type="text/javascript"></script>
     <?php wp_footer(); ?>
 </body>
 </html>

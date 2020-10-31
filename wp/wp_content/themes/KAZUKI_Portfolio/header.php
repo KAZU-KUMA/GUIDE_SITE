@@ -7,10 +7,19 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content=<?php bloginfo( 'description' ); ?>>
     <!-- ファビコン -->
-    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/icon/favicon.ico" type="image/png" sizes="16x16">
+    <link rel="icon" href="<?= get_template_directory_uri(); ?>/img/favicon.ico" type="image/png" sizes="16x16">
     <!-- スライド用CSS -->      
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" rel="stylesheet">
+    <?php
+		// 追加のヘッド
+		if (@$GLOBALS['ADDITIONAL_HEAD']) {
+			$GLOBALS['ADDITIONAL_HEAD']();
+        }
+// <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+// <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    ?>
+    
     <?php wp_head(); ?>
 </head>
 <body>
@@ -28,18 +37,18 @@
     </div>
     <!-- スライド -->
     <div class="slider">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/img_slide01.png" width="100%" alt="">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/img_slide02.png" width="100%" alt="">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/img_slide03.png" width="100%" alt="">
+        <img src="<?= get_template_directory_uri(); ?>/img/img_slide01.png" width="100%" alt="">
+        <img src="<?= get_template_directory_uri(); ?>/img/img_slide02.png" width="100%" alt="">
+        <img src="<?= get_template_directory_uri(); ?>/img/img_slide03.png" width="100%" alt="">
     </div>
     <!-- ヘッダーメニュー -->
     <div class="nav_wrapper">
         <nav class="header_nav_top">
         <ul>
-            <li><a href="#">ホーム</a></li>
-            <li><a href="#">お知らせ</a></li>
-            <li><a href="#">イベント情報</a></li>
-            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="/">ホーム</a></li>
+            <li><a href="/news/">お知らせ</a></li>
+            <li><a href="/event/">イベント情報</a></li>
+            <li><a href="/contact/">お問い合わせ</a></li>
         </ul>
         </nav>
     </div>

@@ -2,8 +2,8 @@
 
 {
 // スライドショー
-$(document).ready(function(){
-  $('.slider').bxSlider({
+jQuery(document).ready(function(){
+  jQuery('.slider').bxSlider({
       auto: true,
       mode: 'fade',
       pause: 5000,
@@ -14,16 +14,16 @@ $(document).ready(function(){
 
 
 // ドロップメニュー
-$(function() {
-  $(".fade > li").hover(
+jQuery(function() {
+  jQuery(".fade > li").hover(
     function() {
-      $(this)
+      jQuery(this)
         .find(".secondary_nav")
         .stop(true)
         .fadeIn(500);
     },
     function() {
-      $(this)
+      jQuery(this)
         .find(".secondary_nav")
         .fadeOut(500);
     }
@@ -31,12 +31,12 @@ $(function() {
 });
 
 //page topボタン
-$(function(){
-  var topBtn=$('#pageTop');
+jQuery(function(){
+  var topBtn=jQuery('#pageTop');
   topBtn.hide();
   //◇ボタンの表示設定
-  $(window).scroll(function(){
-    if($(this).scrollTop()>80){
+  jQuery(window).scroll(function(){
+    if(jQuery(this).scrollTop()>80){
       //---- 画面を80pxスクロールしたら、ボタンを表示する
       topBtn.fadeIn();
     }else{
@@ -46,7 +46,7 @@ $(function(){
   });
   // ◇ボタンをクリックしたら、スクロールして上に戻る
   topBtn.click(function(){
-    $('body,html').animate({
+    jQuery('body,html').animate({
     scrollTop: 0},500);
     return false;
   });

@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: テスト
+*/
+?>
 <?php get_header(); ?>
 <main>        
     <!-- コンテンツ100% -->
@@ -5,7 +10,7 @@
         <!-- コンテナ960px -->
         <div class="container">
             <ul class="breadcrumb">
-                <li><a href="">TOP</a></li>
+                <li><a href="/">TOP</a></li>
                 <li><?php the_title() ?></li>
             </ul>
             <?php if (have_posts()):

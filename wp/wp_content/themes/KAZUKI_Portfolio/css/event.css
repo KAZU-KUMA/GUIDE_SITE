@@ -26,9 +26,18 @@ color:#111;
 color:#d66800;
 }
 
-.event_date{
+.event_title{
+  color: #000000;
+  font-weight: 700;
+}
+
+.event_date, .event_date_archive{
     color: #005EAD;
     font-weight: 700;
+}
+
+.event_date_archive{
+  margin: 12px 0 0 10px;
 }
 
 .label_area {
@@ -48,39 +57,10 @@ color:#d66800;
     margin:20px 0;
 }
 
-
-/* ページネーション */
-ul.pagination {
-    display: inline-block;
-    padding: 0;
-    margin-bottom: 20px;
+.top_area{
+  display: flex;
 }
 
-ul.pagination li {
-    display: inline;
-}
-
-ul.pagination li a {
-    color: #000;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    border: 1px solid #333;
-}
-
-ul.pagination li a.active {
-    background-color:  #555EA9;
-    color: white;
-    border: 1px solid #333;
-}
-
-div.center {
-    text-align: center;
-}
-
-.event_info{
- margin-top: 20px;
-}
 
 
 /* プルダウンメニュー */

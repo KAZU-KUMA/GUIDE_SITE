@@ -1,0 +1,306 @@
+/* 共通 */
+body{
+font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", YuGothic, "Yu Gothic", "Segoe UI", Verdana, Meiryo, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    transition: .2s;
+}
+
+.inner,.cantainer {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container{
+  padding-bottom:20px;
+}
+
+strong{
+    font-size: 120%;
+}
+
+small {
+    font-size: 80%;
+}
+
+dl{
+    padding-top:1em;
+}
+
+dd{
+    padding:0.4em 0;
+}
+
+ul, li{
+    list-style: none;
+}
+
+.title{
+    font-size:30px;
+    margin:20px 0;
+}
+
+.sub_title{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+article{
+    margin:0px 20px 20px;
+}
+
+section{
+    margin:20px;
+}
+
+
+table {
+    width: 100%;
+    border: solid 1px #333;
+    margin: 10px 0;
+    background-color: #fff;
+}
+
+.tableList tr th {
+    text-align: center;
+    border-right: solid 1px #333;
+    background-color: #CCC;
+    padding: 10px;
+    width: 20%;
+}
+
+.tableList tr td {
+    padding: 10px;
+    width: 80%;
+}
+
+.tableList tr {
+    border-bottom: dotted 1px #333
+}
+
+/* 先頭へ */
+#pageTop {
+    position:fixed;
+    bottom:20px;
+    right:50px;
+  }
+  #pageTop i {
+    font-size:20px;
+  }
+  #pageTop a {
+    display:block;
+    z-index:10;
+    width:40px;
+    height:40px;
+    background-color:#9FD6D2;
+    color:#fff;
+    text-align:center;
+    line-height:40px;
+  } 
+  #pageTop a:hover {
+    opacity: 0.7;
+  }
+
+
+/* ヘッダー */
+.header{
+    background-color:#ffffff;
+}
+
+.header_container > .inner{
+    display:flex;
+}
+
+.headerLeft h1{
+    color:#222;
+    text-shadow:2px 2px 3px #555;
+    font-size:40px;
+    z-index:10;
+    padding: 20px 0px 20px 60px;
+    background-image: url("/img/logo01.png");
+    background-position: 0% 50%;
+    background-size: 80px 75px;
+    background-repeat: no-repeat;
+}
+
+.headerRight{
+    margin-left:auto;
+}
+
+.header_nav ul{
+    display: flex;
+    padding: 20px 0px;
+}
+
+.header_nav ul li a {
+    display: block;
+    padding:0 20px;
+    height: 30px;
+    color: #222;
+    text-align: center;
+    line-height: 30px;
+}
+
+.header_nav ul li a:hover{
+    border-bottom:1px solid blue;
+}
+
+/* フッター */
+.footer {
+  height: 200px;
+  background-color: #89c7de;
+  color: #000;
+}
+
+.footer_container{
+    display:flex;
+    margin:0 150px 50px;
+}
+
+.footer_nav ul{
+    display: flex;
+    padding: 20px 0px;
+}
+
+.footer_nav ul li a {
+    display: block;
+    padding:0 20px;
+    height: 30px;
+    color: #222;
+    text-align: center;
+    line-height: 30px;
+}
+
+.footer_nav ul li a:hover{
+    border-bottom:1px solid blue;
+}
+
+.about{
+    margin-left:auto;
+    margin-top: 30px;
+}
+
+.copyright{
+    text-align: center;
+}
+
+
+/* コンテンツ */
+.container{
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    padding:20px 0;
+    min-height: calc(100vh - 300px);
+}
+
+.contents{
+    background: #e7e7e7;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+/* サイドバー */
+
+.side_nav{
+position: absolute;
+top:150px;
+left:200px;
+}
+
+aside .listArea {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 2%;
+    width: 150px;
+}
+
+aside .listArea ul li {
+    font-size: 1.2rem;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    list-style-type: square
+}
+
+/* パンくずリスト */
+.breadcrumb li {
+    color: #000;
+    display: inline;
+    list-style: none;
+}
+
+.breadcrumb li a {
+    color:#222;
+}
+
+.breadcrumb li a:hover {
+    color:#555;
+}
+
+.breadcrumb li:after {
+    content: '>';
+    padding: 0 5px 0 10px;
+    color: #222;
+}
+
+.breadcrumb li:last-child::after {
+    content: normal;
+}
+
+/* ページネーション */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    position: relative;
+    font-size: 13px;
+}
+
+.pagination span, .pagination a {
+    display: block;
+    width: auto;
+    margin: 4px;
+    padding: 8px;
+    border: 1px solid #000;
+    background-color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 16px;
+}
+
+/* ページ番号 */
+.pagination .pager{
+    width: 32px;
+}
+
+/* ホバー時 & 現在のページ */
+.pagination a:hover,
+.pagination .current  {
+    color: #fff;
+    border-color: #000;
+    background-color: #000;
+}
+
+/* 前へ */
+.pagination a.prev {
+    margin-right: 16px;
+}
+/* 次へ */
+.pagination a.next {
+    margin-left: 16px;
+}
+/* 最初へ */
+.pagination a.first {}
+/* 最後へ */
+.pagination a.last {}
+
+/* Page x / y */
+.pagination span.page_num {
+    display: none;
+}
+
