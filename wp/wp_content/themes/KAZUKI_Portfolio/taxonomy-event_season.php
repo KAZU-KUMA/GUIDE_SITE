@@ -9,10 +9,10 @@
         <!-- コンテナ960px -->
         <div class="container">
             <ul class="breadcrumb">
-                <li><a href="">TOP</a></li>
-                <li><?php the_title();?></li>
+                <li><a href="/">TOP</a></li>
+                <li><?php single_term_title(); ?>一覧</li>
             </ul>
-                <h1 class="title">イベント一覧</h1>
+                <h1 class="title"><?php single_term_title(); ?>一覧</h1>
                 <p class="description">新潟県内のイベント情報をご紹介。祭りや伝統行事、花火大会やイルミネーション、グルメ・フードフェス、アート・スポーツなど、お好みのカテゴリーや、エリア、開催日からイベントを簡単検索！!</p>
                   <ul class="event_lists">
                   <?php

@@ -31,6 +31,7 @@
                         <tr><th>備考</th><td><?=esc_html(get_field('event_other'));?></td></tr>
                     </table>
                 </div>
+                <!-- 一覧戻る -->
         </div> <!--containers-->
     </div> <!--contents-->
 <main>

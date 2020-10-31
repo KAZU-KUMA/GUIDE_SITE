@@ -3,6 +3,12 @@
     font-weight: 700;
 }
 
+.news_title {
+    color: #000000;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
 .container dl+dl {
     border-top: 1px solid #838383;
 }

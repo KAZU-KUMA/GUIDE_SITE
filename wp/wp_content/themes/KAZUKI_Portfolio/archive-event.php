@@ -82,7 +82,7 @@
                         <? endwhile;
                     endif;
 
-                    /* ページャーの表示 */
+                    /* ページングの表示 */
                     if (function_exists( 'pagination' )) :
                         pagination( $the_query->max_num_pages, $paged );  
                     endif;

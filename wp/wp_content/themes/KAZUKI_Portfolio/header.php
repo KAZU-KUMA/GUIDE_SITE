@@ -75,7 +75,7 @@
                     <ul>
                         <li><a href="/">ホーム</a></li>
                         <li><a href="/news/">お知らせ</a></li>
-                        <li><a href="/events/">イベント情報</a></li>
+                        <li><a href="/event/">イベント情報</a></li>
                         <li><a href="/contact/">お問い合わせ</a></li>
                     </ul>
                     </nav>
