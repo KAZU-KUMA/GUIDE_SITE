@@ -15,7 +15,15 @@
                 <li><?php the_title();?></li>
             </ul>
                 <h1 class="title"><?=esc_html(get_field('event_title'));?></h1>
-                <p class="label_area place"><?=esc_html(get_field('event_area'));?></p>
+                <?php
+                $areas = get_field('event_area');
+                if( $areas ): ?>
+                    <div class="label">
+                        <?php foreach( $areas as $area ): ?>
+                            <p class="label_area<?php echo $area['value']; ?> place"><?php echo $area['label']; ?></p>
+                        <?php endforeach; ?>
+                        </div>
+                <?php endif; ?>
                 <p class="description"><?=esc_html(get_field('event_text'));?></p>
                 <div class="photo_area">
                     <img src="<?= getImage('event_image')?>" alt="">

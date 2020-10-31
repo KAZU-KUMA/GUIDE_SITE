@@ -36,10 +36,18 @@
                                         <div class="photo_area">
                                             <img src="<?= getImage('event_image')?>" alt="">
                                         </div>
-                                        <div class="top_area">
-                                            <div class="label_area place"><?=esc_html(get_field('event_area'));?></div>
+                                        <!-- <div class="top_area"> -->
+                                        <?php
+                                        $areas = get_field('event_area');
+                                        if( $areas ): ?>
+                                            <div class="label">
+                                                <?php foreach( $areas as $area ): ?>
+                                                    <p class="label_area<?=esc_html($area['value']); ?> place"><?=esc_html($area['label']); ?></p>
+                                                <?php endforeach; ?>
+                                                </div>
+                                        <?php endif; ?>
                                             <div class="event_date_archive"><?=esc_html(get_field('event_day'));?></div>
-                                        </div>
+                                        <!-- </div> -->
                                         <div class="event_title"><?=esc_html(get_field('event_title'));?></div>                                       
                                         <div class="event_description"><?=esc_html(limit_length( get_field('event_text'),53));?></div>
                                     </div>

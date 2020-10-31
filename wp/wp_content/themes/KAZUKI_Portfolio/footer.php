@@ -1,5 +1,6 @@
-<!-- 条件分岐 -->
+<?php if(is_front_page() || is_singular("event") || is_archive()): ?>
 <p id="pageTop"><a href="#"><i class="fas fa-chevron-up"></i></a></p>
+<?php endif; ?>
     <!-- フッターについて -->
     <footer class="footer">
         <div class="footer_container">

@@ -16,10 +16,18 @@
         </ul>
     <h2 class="sub_title">カテゴリ別</h2>
         <ul>
-            <li><a href="/event/type/firework/">花火</a></li>
-            <li><a href="/event/type/festival/">祭り</a></li>
-            <li><a href="/event/type/sport/">スポーツ</a></li>
-            <li><a href="/event/type/other/">その他</a></li>
+        <?php
+            $args = [
+                'orderby' => 'count',
+                'order' => 'desc',
+                'hide_empty' => true,
+                'number' => 10,
+            ];
+            $terms = get_terms( 'event_type', $args );
+            foreach( $terms as $term ) :
+                $term_url = get_term_link( $term->term_id, 'event_type' ); ?>
+                <li><a href="<?php echo esc_url( $term_url ); ?>"><?php echo esc_html( $term->name ); ?></a></li>
+            <?php endforeach; ?>
         </ul>
     </div>
 </aside>

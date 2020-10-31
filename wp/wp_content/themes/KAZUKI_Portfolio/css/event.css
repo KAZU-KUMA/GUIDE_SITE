@@ -37,28 +37,47 @@ color:#d66800;
 }
 
 .event_date_archive{
-  margin: 12px 0 0 10px;
+  margin-bottom:5px;
 }
 
-.label_area {
+.label_area01 {
     color: #fff;
-    background-color: #555EA9;
+    background-color: #56a04c;
+}
+
+.label_area02{
+  color: #fff;
+  background-color: #242d81;
+}
+
+.label_area03 {
+  color: #fff;
+  background-color: #a72222;
+}
+
+.label_area04 {
+  color: #fff;
+  background-color: #b86e00;
 }
 
 .place {
     color: white;
     padding: 5px;
-    margin: 10px 0;
+    margin: 10px 2px;
     display: table;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .event_list{
     margin:20px 0;
 }
 
-.top_area{
+/* .top_area{
   display: flex;
+} */
+
+.label{
+  display:flex;
 }
 
 

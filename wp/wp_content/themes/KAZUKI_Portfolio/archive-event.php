@@ -9,7 +9,7 @@
         <!-- コンテナ960px -->
         <div class="container">
             <ul class="breadcrumb">
-                <li><a href="">TOP</a></li>
+                <li><a href="/">TOP</a></li>
                 <li><?php the_title();?></li>
             </ul>
 
@@ -44,10 +44,18 @@
                           <span class="btn">カテゴリ別で探す</span>
                           <!-- カスタム追加 -->
                           <ul class="secondary_nav">
-                            <li><a href="/event/type/firework/">花火</a></li>
-                            <li><a href="/event/type/festival/">祭り</a></li>
-                            <li><a href="/event/type/sport/">スポーツ</a></li>
-                            <li><a href="/event/type/other/">その他</a></li>
+                            <?php
+                            $args = [
+                              'orderby' => 'count',
+                              'order' => 'desc',
+                              'hide_empty' => true,
+                              'number' => 10,
+                            ];
+                            $terms = get_terms( 'event_type', $args );
+                            foreach( $terms as $term ) :
+                              $term_url = get_term_link( $term->term_id, 'event_type' ); ?>
+                              <li><a href="<?php echo esc_url( $term_url ); ?>"><?php echo esc_html( $term->name ); ?></a></li>
+                            <?php endforeach; ?>
                           </ul>
                         </li>
                       </ul>
@@ -70,10 +78,18 @@
                                         <div class="photo_area">
                                             <img src="<?= getImage('event_image')?>" alt="">
                                         </div>
-                                        <div class="top_area">
-                                            <div class="label_area place"><?=esc_html(get_field('event_area'));?></div>
+                                        <!-- <div class="top_area"> -->
+                                        <?php
+                                        $areas = get_field('event_area');
+                                        if( $areas ): ?>
+                                            <div class="label">
+                                                <?php foreach( $areas as $area ): ?>
+                                                    <p class="label_area<?=esc_html($area['value']); ?> place"><?=esc_html($area['label']); ?></p>
+                                                <?php endforeach; ?>
+                                                </div>
+                                        <?php endif; ?>
                                             <div class="event_date_archive"><?=esc_html(get_field('event_day'));?></div>
-                                        </div>
+                                        <!-- </div> -->
                                         <div class="event_title"><?=esc_html(get_field('event_title'));?></div>                                       
                                         <div class="event_description"><?=esc_html(limit_length( get_field('event_text'),53));?></div>
                                     </div>
