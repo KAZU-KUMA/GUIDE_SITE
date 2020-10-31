@@ -1,3 +1,4 @@
+<!-- 条件分岐 -->
 <p id="pageTop"><a href="#"><i class="fas fa-chevron-up"></i></a></p>
     <!-- フッターについて -->
     <footer class="footer">

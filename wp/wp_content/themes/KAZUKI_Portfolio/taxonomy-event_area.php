@@ -22,9 +22,9 @@
                       'posts_per_page' => 3, 
                       'paged' => $paged,
                       'tax_query' => [[
-                        'taxonomy' => 'event_type',
+                        'taxonomy' => 'event_area',
                         'field' => 'slug',
-                        'terms' => 'nagaoka',
+                        'terms' => get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')),
                     ]],
                     );
                     $the_query = new WP_Query( $args );
@@ -41,7 +41,7 @@
                                             <div class="event_date_archive"><?=esc_html(get_field('event_day'));?></div>
                                         </div>
                                         <div class="event_title"><?=esc_html(get_field('event_title'));?></div>                                       
-                                        <div class="event_description"><?=esc_html(limit_length( get_field('event_text'),36));?></div>
+                                        <div class="event_description"><?=esc_html(limit_length( get_field('event_text'),53));?></div>
                                     </div>
                                 </a>
                             </li>
