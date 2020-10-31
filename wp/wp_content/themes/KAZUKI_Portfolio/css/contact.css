@@ -92,7 +92,7 @@ input[type=button]:hover, button:hover{
 }
 
 
-span {
+.essential{
     color: #fff;
     background: #fb3b6f;
     display: inline-block;

@@ -17,7 +17,7 @@
     <h2 class="sub_title">カテゴリ別</h2>
         <ul>
             <li><a href="/event/type/firework/">花火</a></li>
-            <li><a href="/event/type/festivel/">祭り</a></li>
+            <li><a href="/event/type/festival/">祭り</a></li>
             <li><a href="/event/type/sport/">スポーツ</a></li>
             <li><a href="/event/type/other/">その他</a></li>
         </ul>

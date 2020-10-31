@@ -4,23 +4,26 @@ function my_styles() {
 	// wp_enqueue_style( 'layout', get_template_directory_uri() . '/css/layout.css' );
 	// wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css' );
 	wp_enqueue_style( 'reset', get_template_directory_uri() . '/css/html5doctor_1.6.1.css', array(), '1.0', false);
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/layout.css', array('reset'), '1.0', false);
+    wp_enqueue_style( 'style', get_template_directory_uri() . '/css/layout.css', array('reset'), '1.0', false);
+    wp_enqueue_style( 'style2', '//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css');
 }
 add_action( 'wp_enqueue_scripts', 'my_styles' );
 
 // JavaScriptを読み込む
 function my_scripts() {
-	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts' );
 
+//JQuery読み込み
 function custom_print_scripts() {
 	if (!is_admin()) {
 	  //デフォルトjquery削除
 	  wp_deregister_script('jquery');
 	  
 	  //GoogleCDNから読み込む
-	  wp_enqueue_script('jquery-js', '//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' );
+      wp_enqueue_script('jquery-js', '//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' );
+      wp_enqueue_script('jquery-js2', '//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js' );
 	}
   }
   add_action('wp_print_scripts', 'custom_print_scripts');

@@ -26,6 +26,11 @@ small {
     font-size: 80%;
 }
 
+.center{
+    text-align: center;
+    margin: 0 auto;
+}
+
 dl{
     padding-top:1em;
 }
