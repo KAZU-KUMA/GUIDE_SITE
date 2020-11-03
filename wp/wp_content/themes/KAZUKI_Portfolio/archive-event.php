@@ -1,7 +1,3 @@
-<?php $GLOBALS['ADDITIONAL_HEAD'] = function() {?>
-    <!-- このページのみCSS -->
-	<link rel="stylesheet" href="<?=get_template_directory_uri();?>/css/event.css">
-<?php }?>
 <?php get_header(); ?>
 <main>        
     <!-- コンテンツ100% -->
@@ -22,7 +18,6 @@
                         <li>
                           <span class="btn">エリア別で探す</span>
                           <ul class="secondary_nav">
-                            <!-- エリアラベルカラー -->
                             <li><a href="/event/area/niigata/">新潟エリア</a></li>
                             <li><a href="/event/area/nagaoka/">長岡エリア</a></li>
                             <li><a href="/event/area/joetsu/">上越エリア</a></li>
@@ -42,7 +37,6 @@
               
                         <li>
                           <span class="btn">カテゴリ別で探す</span>
-                          <!-- カスタム追加 -->
                           <ul class="secondary_nav">
                             <?php
                             $args = [
@@ -61,7 +55,7 @@
                       </ul>
                     </nav>
                   </div>
-                  <ul class="event_lists">
+                  <ul class="event_lists flex_tab">
                   <?php
                     $paged = get_query_var('paged') ?: 1;
                     $args  = array(
@@ -84,21 +78,21 @@
                                         if( $areas ): ?>
                                             <div class="label">
                                                 <?php foreach( $areas as $area ): ?>
-                                                    <p class="label_area<?=esc_html($area['value']); ?> place"><?=esc_html($area['label']); ?></p>
+                                                    <p class="label_area<?=esc_html($area['value']); ?> area"><?=esc_html($area['label']); ?></p>
                                                 <?php endforeach; ?>
-                                                </div>
+                                            </div>
                                         <?php endif; ?>
-                                            <div class="event_date_archive"><?=esc_html(get_field('event_day'));?></div>
+                                            <p class="days bold"><?=esc_html(get_field('event_day'));?></p>
                                         <!-- </div> -->
-                                        <div class="event_title"><?=esc_html(get_field('event_title'));?></div>                                       
-                                        <div class="event_description"><?=esc_html(limit_length( get_field('event_text'),53));?></div>
+                                        <p class="event_title bold"><?=esc_html(get_field('event_title'));?></p>                                       
+                                        <p class="event_description area_size"><?=esc_html(limit_length( get_field('event_text'), textLength));?></p>
                                     </div>
                                 </a>
                             </li>
-                        <? endwhile;
-                    endif;
-
-                    /* ページングの表示 */
+                        <?php endwhile;
+                    endif; ?>
+                </ul>
+                   <?php /* ページングの表示 */
                     if (function_exists( 'pagination' )) :
                         pagination( $the_query->max_num_pages, $paged );  
                     endif;

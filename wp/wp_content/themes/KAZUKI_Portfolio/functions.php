@@ -1,17 +1,15 @@
 <?php
 // CSSを読み込む
 function my_styles() {
-	// wp_enqueue_style( 'layout', get_template_directory_uri() . '/css/layout.css' );
-	// wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css' );
-	wp_enqueue_style( 'reset', get_template_directory_uri() . '/css/html5doctor_1.6.1.css', array(), '1.0', false);
-    wp_enqueue_style( 'style', get_template_directory_uri() . '/css/layout.css', array('reset'), '1.0', false);
-    wp_enqueue_style( 'style2', '//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css');
+	wp_enqueue_style( 'reset', get_template_directory_uri() . '/css/reset.css', array(), '1.0', false);
+    wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', array('reset'), '1.0', false);
+    wp_enqueue_style( 'style2\-slide', '//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css');
 }
 add_action( 'wp_enqueue_scripts', 'my_styles' );
 
 // JavaScriptを読み込む
 function my_scripts() {
-    wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '1.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts' );
 
@@ -21,12 +19,12 @@ function custom_print_scripts() {
 	  //デフォルトjquery削除
 	  wp_deregister_script('jquery');
 	  
-	  //GoogleCDNから読み込む
-      wp_enqueue_script('jquery-js', '//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' );
-      wp_enqueue_script('jquery-js2', '//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js' );
-	}
+	  //読み込む
+     wp_enqueue_script('jquery-js', '//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' );
+     wp_enqueue_script('jquery-slide', '//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js' );
+    }
   }
-  add_action('wp_print_scripts', 'custom_print_scripts');
+  add_action('wp_enqueue_scripts', 'custom_print_scripts');
   
 
 // 文字数制限、limitを超えた場合、末尾を…に置換
@@ -101,3 +99,6 @@ function pagination( $pages, $paged, $range = 2, $show_only = false ) {
         echo '</div>';
     }
 }
+
+// 定数
+define("textLength", 77);

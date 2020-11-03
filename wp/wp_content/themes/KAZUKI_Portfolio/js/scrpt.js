@@ -34,7 +34,7 @@ jQuery(function() {
 jQuery(function(){
   var topBtn=jQuery('#pageTop');
   topBtn.hide();
-  //◇ボタンの表示設定
+  //ボタンの表示設定
   jQuery(window).scroll(function(){
     if(jQuery(this).scrollTop()>80){
       //---- 画面を80pxスクロールしたら、ボタンを表示する
@@ -44,10 +44,23 @@ jQuery(function(){
       topBtn.fadeOut();
     }
   });
-  // ◇ボタンをクリックしたら、スクロールして上に戻る
+  // ボタンをクリックしたら、スクロールして上に戻る
   topBtn.click(function(){
     jQuery('body,html').animate({
     scrollTop: 0},500);
     return false;
+  });
+
+//ハンバーガーメニュー
+jQuery(function() {
+  　jQuery('.Toggle').click(function() {
+  　　jQuery(this).toggleClass('active');
+  
+  　if (jQuery(this).hasClass('active')) {
+  　　jQuery('.NavMenu').addClass('active');　 //クラスを付与
+  　} else {
+  　　jQuery('.NavMenu').removeClass('active'); //クラスを外す
+  　}
+  　});
   });
 });

@@ -1,9 +1,3 @@
-<?php if(is_page('contact')):?>
-    <?php $GLOBALS['ADDITIONAL_HEAD'] = function() {?>
-        <!-- このページのみCSS -->
-        <link rel="stylesheet" href="<?=get_template_directory_uri();?>/css/contact.css">
-        <?php }?>
-        <?php endif;?>
 <?php get_header(); ?>
 <main>        
     <!-- コンテンツ100% -->

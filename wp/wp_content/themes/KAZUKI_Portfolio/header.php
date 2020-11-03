@@ -40,14 +40,20 @@
     </div>
     <!-- ヘッダーメニュー -->
     <div class="nav_wrapper">
-        <nav class="header_nav_top">
-        <ul>
-            <li><a href="/">ホーム</a></li>
-            <li><a href="/news/">お知らせ</a></li>
-            <li><a href="/event/">イベント情報</a></li>
-            <li><a href="/contact/">お問い合わせ</a></li>
-        </ul>
-        </nav>
+        <nav class="header_nav_top NavMenu">
+                <ul class="menu">
+                    <li class="menu_item"><a href="/">ホーム</a></li>
+                    <li class="menu_item"><a href="/news/">お知らせ</a></li>
+                    <li class="menu_item"><a href="/event/">イベント情報</a></li>
+                    <li class="menu_item"><a href="/contact/">お問い合わせ</a></li>
+                </ul>
+                </nav>
+                <!-- ハンバーガーメニュー部分 --> 
+                <div class="Toggle">
+                　　<span></span>
+                　　<span></span>
+                　　<span></span>
+                </div>
     </div>
     </header>
 
@@ -59,27 +65,33 @@
     <!-- ヘッダーについて -->
     <header class="header">
     <!-- ヘッダーについて -->
-    <div class="header_container">
-        <div class="inner">
-            <!-- 左側ロゴ -->
-            <div class="headerLeft">
+    <div class="container">
+        <!-- 左側ロゴ -->
+        <a href="/">
+            <div class="left">
                 <h1>新潟県観光ガイド</h1>
             </div>
-        <!-- ヘッダーメニュー -->
-            <div class="headerRight">
-                <div class="nav_wrapper">
-                    <nav class="header_nav">
-                    <ul>
-                        <li><a href="/">ホーム</a></li>
-                        <li><a href="/news/">お知らせ</a></li>
-                        <li><a href="/event/">イベント情報</a></li>
-                        <li><a href="/contact/">お問い合わせ</a></li>
-                    </ul>
-                    </nav>
+        </a>
+
+        <div class="right">
+            <!-- ナビメニュー部分 -->
+            <!-- <div class="nav_wrapper"> -->
+                <nav class="NavMenu">
+                <ul class="menu">
+                    <li class="menu_item"><a href="/">ホーム</a></li>
+                    <li class="menu_item"><a href="/news/">お知らせ</a></li>
+                    <li class="menu_item"><a href="/event/">イベント情報</a></li>
+                    <li class="menu_item"><a href="/contact/">お問い合わせ</a></li>
+                </ul>
+                </nav>
+                <!-- ハンバーガーメニュー部分 --> 
+                <div class="Toggle">
+                　　<span></span>
+                　　<span></span>
+                　　<span></span>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
     </div>
     </header>
-
 <?php }?>

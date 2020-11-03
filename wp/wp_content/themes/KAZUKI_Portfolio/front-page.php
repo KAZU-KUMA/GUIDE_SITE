@@ -1,8 +1,6 @@
 <?php $GLOBALS['ADDITIONAL_HEAD'] = function() {?>
     <!-- このページのみCSS -->
-    <link rel="stylesheet" href="<?=get_template_directory_uri();?>/css/front_page.css">
-    <link rel="stylesheet" href="<?=get_template_directory_uri();?>/css/news.css">
-    <link rel="stylesheet" href="<?=get_template_directory_uri();?>/css/event.css">
+    <link rel="stylesheet" href="<?=get_template_directory_uri();?>/css/top.css">
 <?php }?>
 <?php get_header(); ?>
 <main>        
@@ -33,8 +31,8 @@
                         $article = SCF::get('news'); 
                         foreach ($article as $news): ?>
                         <dl>
-                            <dt class="days"><?= esc_html($news['news_day']); ?></dt>
-                            <dt class="news_title"><?= esc_html($news['news_title']); ?></dt>
+                            <dt class="days bold"><?= esc_html($news['news_day']); ?></dt>
+                            <dt class="news_title bold"><?= esc_html($news['news_title']); ?></dt>
                             <dd class="news_text"><?= esc_html($news['news_text']); ?></dd>
                         </dl>
 
@@ -47,7 +45,7 @@
             <div class="noticeBox">
             <h2>イベント情報</h2>
             <div class="top_event">
-            <ul class="event_lists">
+            <ul class="event_lists flex_tab">
             <?php
                     $paged = get_query_var('paged') ?: 1;
                     $args  = array(
@@ -69,14 +67,14 @@
                                         if( $areas ): ?>
                                             <div class="label">
                                                 <?php foreach( $areas as $area ): ?>
-                                                    <p class="label_area<?=esc_html($area['value']); ?> place"><?=esc_html($area['label']); ?></p>
+                                                    <p class="label_area<?=esc_html($area['value']); ?> area"><?=esc_html($area['label']); ?></p>
                                                 <?php endforeach; ?>
                                                 </div>
                                         <?php endif; ?>
-                                            <div class="event_date_archive"><?=esc_html(get_field('event_day'));?></div>
+                                            <p class="event_date days bold"><?=esc_html(get_field('event_day'));?></p>
                                         <!-- </div> -->
-                                        <div class="event_title"><?=esc_html(get_field('event_title'));?></div>                                       
-                                        <div class="event_description"><?=esc_html(limit_length( get_field('event_text'),50));?></div>
+                                        <p class="event_title bold"><?=esc_html(get_field('event_title'));?></p>                                       
+                                        <div class="event_description area_size"><p><?=esc_html(limit_length( get_field('event_text'),textLength));?></p></div>
                                     </div>
                                 </a>
                             </li>
@@ -101,7 +99,6 @@
                     <tr><th>県鳥</th><td>トキ</td></tr>
                 </table>
             </div>
-
 
         </div> <!--containers-->
     </div> <!--contents-->

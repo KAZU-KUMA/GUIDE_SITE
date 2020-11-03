@@ -1,5 +1,5 @@
 <aside>
-    <div class="listArea side_nav">
+    <div class="listArea">
     <h2 class="sub_title">エリア別</h2>
         <ul>
             <li><a href="/event/area/niigata/">新潟エリア</a></li>

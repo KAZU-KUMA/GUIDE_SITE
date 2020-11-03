@@ -3,18 +3,17 @@
 <?php endif; ?>
     <!-- フッターについて -->
     <footer class="footer">
-        <div class="footer_container">
+        <div class="container">
             <!-- フッターメニュー -->
-            <nav class="footer_nav">
+            <nav class="menu">
                 <ul>
-                    <li><a href="/news/">お知らせ</a></li>
                     <li><a href="/privacy/">プライバシーポリシー</a></li>
                     <li><a href="/contact/">お問い合わせ</a></li>
                     <li><a href="/access/">アクセス</a></li>
                     <li><a href="/about/">このサイトについて</a></li>
                 </ul>
             </nav>
-            <p class="about">
+            <p class="about textCenter">
                 <strong>●●法人 新潟県●●観光協会</strong><br>
                 〒123-4567 新潟県●●市●●区●●番地●●-●<br>
                 電話番号：123-4567-8900<br>
@@ -22,7 +21,7 @@
             </p>
         </div>
         <!-- コピーライト -->
-        <p class="copyright">
+        <p class="copyright textCenter">
             <small>Copyright &#169; 2020 ●●●● All Rights Reserved.</small>
         </p>
     </footer>

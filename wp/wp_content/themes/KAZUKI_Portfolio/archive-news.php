@@ -1,7 +1,3 @@
-<?php $GLOBALS['ADDITIONAL_HEAD'] = function() {?>
-    <!-- このページのみCSS -->
-	<link rel="stylesheet" href="<?=get_template_directory_uri();?>/css/news.css">
-<?php }?>
 <?php get_header(); ?>
 <main>        
     <!-- コンテンツ100% -->
@@ -26,8 +22,8 @@
                     $article = SCF::get('news'); 
                     foreach ($article as $news): ?>
                     <dl>
-                        <dt class="days"><?= esc_html($news['news_day']); ?></dt>
-                        <dt class="news_title"><?= esc_html($news['news_title']); ?></dt>
+                        <dt class="days bold"><?= esc_html($news['news_day']); ?></dt>
+                        <dt class="news_title bold"><?= esc_html($news['news_title']); ?></dt>
                         <dd class="news_text"><?= esc_html($news['news_text']); ?></dd>
                     </dl>
 

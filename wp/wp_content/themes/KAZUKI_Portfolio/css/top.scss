@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+// fonts
+$fonts:"Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", YuGothic, "Yu Gothic", "Segoe UI", Verdana, Meiryo, sans-serif;
+
+// カラー
+$black: #000;
+$white: #fff;
+$gray:  #CCC;
+$darkGray: #222;
+$aqua: #9FD6D2;
+$blue:  #00f;
+$red: #f00;
+$green: #56a04c;
+$orenge:#b86e00;
+$darkBlue: #242d81;
+
+/* ブレークポイント */
+$breakpoints: (
+  "sp": "screen and (max-width: 450px)",
+  "tab": "screen and (max-width: 767px)",
+  "tab2": "screen and (max-width: 1024px)",
+  "pc": "screen and (min-width: 1024px)",
+);
+
+// メディアクエリー
+@mixin mq($breakpoint: sp) {
+
+    @media #{map-get($breakpoints, $breakpoint)} {
+  
+      @content;
+    }
+}
+
+// -----------------------------------------------------
+/* ロゴ */
+.header_logo_top h1{
+    color:$aqua;
+    text-shadow:2px 2px 3px $red;
+    font-size:2.5rem;
+    position: absolute;
+    top: 30px;
+    left:70px;
+    z-index:10;
+    padding: 20px 70px;
+    background-image: url(../img/logo01.png);
+    background-position: 0% 50%;
+    background-size: 80px 75px;
+    background-repeat: no-repeat;
+    @include mq('sp'){
+        color:$black;
+        text-shadow: 2px 2px 3px $darkGray;
+        font-size:2.3rem;
+        padding: 0;
+        background-image: none;
+        position: static;
+        text-align: center;
+        padding: 10px;
+        margin-right: 40px;
+    }
+}
+
+/* スライド */
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 30px;
+}
+
+.bx-wrapper {
+    background-color: transparent;
+    margin: 0px auto;
+    border: none;
+    box-shadow: none;
+    @include mq('sp'){
+        display: none;
+    }
+}
+.bx-wrapper img {
+    display: block;
+    margin: 0px auto;
+}
+
+/* ヘッダーナビ */
+.header_nav_top{
+    ul{
+        justify-content: space-around;
+        padding: 15px 0;
+        background-color: $darkGray;
+    }
+    
+    li {
+        width: calc((100% - 5px)/2); 
+    }
+    
+    a {
+        display: block;
+        height: 30px;
+        color: $white;
+        text-align: center;
+        line-height: 30px;
+        color: $white;
+        border-right: 1px solid $white;
+        @include mq('sp'){
+            color: $white;
+            border-right: 1px solid $darkGray;
+        }
+    }
+    
+    a:hover{
+        color:$orenge;
+        border-bottom: none
+    }
+    
+    li:last-child a {
+        border-right: none;
+    }
+}
+
+//　トピック
+.noticeBox {
+    width: 100%;
+    margin-bottom: 40px;
+    // border: 1px solid $darkGray;
+    background-color: $white;
+    .txtArea {
+        text-align: center;
+    }
+    
+    
+    .top_news, .txtArea, .top_event{
+        padding: 10px;
+    }
+}
+
+h2 {
+    color: $white;
+    text-align: center;
+    padding: 5px 0;
+    background-color: $darkGray;
+}
+

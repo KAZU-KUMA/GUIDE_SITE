@@ -1,7 +1,3 @@
-<?php $GLOBALS['ADDITIONAL_HEAD'] = function() {?>
-    <!-- このページのみCSS -->
-	<link rel="stylesheet" href="<?=get_template_directory_uri();?>/css/event.css">
-<?php }?>
 <?php get_header(); ?>
 <main>        
     <!-- コンテンツ100% -->
@@ -14,18 +10,13 @@
             </ul>
                 <h1 class="title"><?php single_term_title(); ?>一覧</h1>
                 <p class="description">新潟県内のイベント情報をご紹介。祭りや伝統行事、花火大会やイルミネーション、グルメ・フードフェス、アート・スポーツなど、お好みのカテゴリーや、エリア、開催日からイベントを簡単検索！!</p>
-                  <ul class="event_lists">
+                <ul class="event_lists flex_tab">
                   <?php
                     $paged = get_query_var('paged') ?: 1;
                     $args  = array(
                       'post_type' => 'event',
                       'posts_per_page' => 3, 
                       'paged' => $paged,
-                      'tax_query' => [[
-                        'taxonomy' => 'event_area',
-                        'field' => 'slug',
-                        'terms' => get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')),
-                    ]],
                     );
                     $the_query = new WP_Query( $args );
                     if ( $the_query->have_posts() ) :
@@ -42,21 +33,21 @@
                                         if( $areas ): ?>
                                             <div class="label">
                                                 <?php foreach( $areas as $area ): ?>
-                                                    <p class="label_area<?=esc_html($area['value']); ?> place"><?=esc_html($area['label']); ?></p>
+                                                    <p class="label_area<?=esc_html($area['value']); ?> area"><?=esc_html($area['label']); ?></p>
                                                 <?php endforeach; ?>
-                                                </div>
+                                            </div>
                                         <?php endif; ?>
-                                            <div class="event_date_archive"><?=esc_html(get_field('event_day'));?></div>
+                                            <p class="days bold"><?=esc_html(get_field('event_day'));?></p>
                                         <!-- </div> -->
-                                        <div class="event_title"><?=esc_html(get_field('event_title'));?></div>                                       
-                                        <div class="event_description"><?=esc_html(limit_length( get_field('event_text'),53));?></div>
+                                        <p class="event_title bold"><?=esc_html(get_field('event_title'));?></p>                                       
+                                        <p class="event_description area_size"><?=esc_html(limit_length( get_field('event_text'), textLength));?></p>
                                     </div>
                                 </a>
                             </li>
-                        <? endwhile;
-                    endif;
-
-                    /* ページャーの表示 */
+                        <?php endwhile;
+                    endif; ?>
+                </ul>
+                   <?php /* ページャーの表示 */
                     if (function_exists( 'pagination' )) :
                         pagination( $the_query->max_num_pages, $paged );  
                     endif;

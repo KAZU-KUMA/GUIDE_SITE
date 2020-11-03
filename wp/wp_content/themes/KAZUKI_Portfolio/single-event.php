@@ -1,12 +1,7 @@
-<?php $GLOBALS['ADDITIONAL_HEAD'] = function() {?>
-    <!-- このページのみCSS -->
-	<link rel="stylesheet" href="<?=get_template_directory_uri() ?>/css/event.css">
-<?php }?>
 <?php get_header(); ?>
 <main>        
     <!-- コンテンツ100% -->
     <div class="contents">
-    <?php get_template_part('sidebar'); ?>
         <!-- コンテナ960px -->
         <div class="container">
             <ul class="breadcrumb">
@@ -14,13 +9,18 @@
                 <li><a href="/event/">イベント一覧</a></li>
                 <li><?php the_title();?></li>
             </ul>
+            <div class="wrapper">
+                <div class="side">
+                    <?php get_template_part('sidebar'); ?>
+                </div>
+                <div class="main">
                 <h1 class="title"><?=esc_html(get_field('event_title'));?></h1>
                 <?php
                 $areas = get_field('event_area');
                 if( $areas ): ?>
                     <div class="label">
                         <?php foreach( $areas as $area ): ?>
-                            <p class="label_area<?php echo $area['value']; ?> place"><?php echo $area['label']; ?></p>
+                            <p class="label_area<?php echo $area['value']; ?> area"><?php echo $area['label']; ?></p>
                         <?php endforeach; ?>
                         </div>
                 <?php endif; ?>
@@ -39,7 +39,9 @@
                         <tr><th>備考</th><td><?=esc_html(get_field('event_other'));?></td></tr>
                     </table>
                 </div>
-                <!-- 一覧戻る -->
+            </div>
+            </div>
+            <div class="btn"><a href="/event/">戻る</a></div>
         </div> <!--containers-->
     </div> <!--contents-->
 <main>
