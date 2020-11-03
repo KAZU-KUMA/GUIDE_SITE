@@ -18,15 +18,13 @@ $darkBlue: #242d81;
 
 // ブレークポイント
 $breakpoints: (
-  "sp": "screen and (max-width: 450px)",
-  "tab": "screen and (max-width: 767px)",
-  "tab2": "screen and (max-width: 1024px)",
+  "sp": "screen and (max-width: 768px)",
+  "tab": "screen and (max-width: 1023px)",
   "pc": "screen and (min-width: 1024px)",
 );
 
 // メディアクエリー
 @mixin mq($breakpoint: sp) {
-
     @media #{map-get($breakpoints, $breakpoint)} {
   
       @content;
@@ -225,7 +223,7 @@ iframe{
 // flex
 .flex_tab{
     display: flex;
-    @include mq('tab2'){
+    @include mq('tab'){
         display: block;
     }
 }
@@ -268,7 +266,7 @@ footer{
     height:180px;
     background-color: $aqua;
     .container {
-        background-color: $white;
+        background-color: $aqua;
     }
 
     ul{
@@ -302,6 +300,23 @@ nav{
 
 }
 
+nav ul.primary_nav{        
+    @include mq('tab') {
+      display: block;
+      li{
+          width: 100%;
+      }
+    }
+
+}
+.secondary_nav{
+    @include mq('tab') {
+        position: absolute;
+         top:40px;
+         left: 50%;
+         transform: translateX(-57%);
+    }
+}
 //ハンバーガーメニュー(sp以下)
 .Toggle{
     display: none;
@@ -666,7 +681,6 @@ input[type=submit]:hover,input[type=button]:hover, button:hover{
 // コンテンツ
 div.list_content{
     width:calc(100%-200px/3);
-    // padding-left: 15%;
     @include mq('tab'){
         margin: 5px auto;
         width: 100%;

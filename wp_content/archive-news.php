@@ -13,7 +13,7 @@
                 $paged = get_query_var('paged') ?: 1;
                 $args  = array(
                     'post_type' => 'news',
-                    'posts_per_page' => 3, 
+                    'posts_per_page' => newsCount, 
                     'paged' => $paged,
                 );
                 $the_query = new WP_Query( $args );

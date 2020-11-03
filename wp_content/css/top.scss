@@ -17,9 +17,8 @@ $darkBlue: #242d81;
 
 /* ブレークポイント */
 $breakpoints: (
-  "sp": "screen and (max-width: 450px)",
-  "tab": "screen and (max-width: 767px)",
-  "tab2": "screen and (max-width: 1024px)",
+  "sp": "screen and (max-width: 768px)",
+  "tab": "screen and (max-width: 1023px)",
   "pc": "screen and (min-width: 1024px)",
 );
 
@@ -132,7 +131,7 @@ $breakpoints: (
     }
 }
 
-h2 {
+h3 {
     color: $white;
     text-align: center;
     padding: 5px 0;

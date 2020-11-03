@@ -31,7 +31,7 @@ h1 {
   font-size: 2.5rem;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 2.0rem;
   }
@@ -42,7 +42,7 @@ h2 {
   font-size: 1.8rem;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   h2 {
     font-size: 1.5rem;
   }
@@ -53,7 +53,7 @@ h3 {
   font-size: 1.2rem;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   h3 {
     font-size: 1.0rem;
   }
@@ -125,7 +125,7 @@ iframe {
   width: 50%;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   iframe {
     width: 100%;
   }
@@ -165,7 +165,7 @@ iframe {
   display: flex;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .flex_tab {
     display: block;
   }
@@ -175,7 +175,7 @@ iframe {
   display: flex;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .flex_sp {
     display: block;
   }
@@ -196,7 +196,7 @@ header .container {
   background-color: #fff;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   header .container {
     display: block;
   }
@@ -213,7 +213,7 @@ footer {
 }
 
 footer .container {
-  background-color: #fff;
+  background-color: #9FD6D2;
 }
 
 footer ul {
@@ -225,7 +225,7 @@ nav ul {
   justify-content: space-around;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   nav ul {
     display: block;
     margin: 20px;
@@ -245,11 +245,29 @@ nav a:hover {
   border-bottom: 1px solid #00f;
 }
 
+@media screen and (max-width: 1023px) {
+  nav ul.primary_nav {
+    display: block;
+  }
+  nav ul.primary_nav li {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .secondary_nav {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-57%);
+  }
+}
+
 .Toggle {
   display: none;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .NavMenu {
     position: fixed;
     z-index: 2;
@@ -429,7 +447,7 @@ aside a:hover {
   width: 80%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .main {
     width: 100%;
   }
@@ -440,7 +458,7 @@ aside a:hover {
   margin-right: 20px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .side {
     display: none;
   }
@@ -491,7 +509,7 @@ aside a:hover {
   display: none;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .pagination a.first, .pagination a.last {
     display: none;
   }
@@ -541,7 +559,7 @@ input[type=text], input[type=email], select, textarea {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   input[type=text], input[type=email], select, textarea {
     width: 90%;
   }
@@ -613,7 +631,7 @@ div.list_content {
   width: calc(100%-200px/3);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   div.list_content {
     margin: 5px auto;
     width: 100%;

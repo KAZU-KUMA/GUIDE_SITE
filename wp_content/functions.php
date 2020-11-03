@@ -102,3 +102,5 @@ function pagination( $pages, $paged, $range = 2, $show_only = false ) {
 
 // 定数
 define("textLength", 77);
+define("eventCount", 6);
+define("newsCount", 5);

@@ -11,12 +11,17 @@
                 <h1 class="title"><?php single_term_title(); ?>一覧</h1>
                 <p class="description">新潟県内のイベント情報をご紹介。祭りや伝統行事、花火大会やイルミネーション、グルメ・フードフェス、アート・スポーツなど、お好みのカテゴリーや、エリア、開催日からイベントを簡単検索！!</p>
                 <ul class="event_lists flex_tab">
-                  <?php
+                <?php
                     $paged = get_query_var('paged') ?: 1;
                     $args  = array(
                       'post_type' => 'event',
-                      'posts_per_page' => 3, 
+                      'posts_per_page' => eventCount, 
                       'paged' => $paged,
+                      'tax_query' => [[
+                        'taxonomy' => 'event_season',
+                        'field' => 'slug',
+                        'terms' => get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')),
+                    ]],
                     );
                     $the_query = new WP_Query( $args );
                     if ( $the_query->have_posts() ) :

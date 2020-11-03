@@ -41,7 +41,7 @@
     <!-- ヘッダーメニュー -->
     <div class="nav_wrapper">
         <nav class="header_nav_top NavMenu">
-                <ul class="menu">
+                <ul class="menu_top">
                     <li class="menu_item"><a href="/">ホーム</a></li>
                     <li class="menu_item"><a href="/news/">お知らせ</a></li>
                     <li class="menu_item"><a href="/event/">イベント情報</a></li>
@@ -76,7 +76,7 @@
         <div class="right">
             <!-- ナビメニュー部分 -->
             <!-- <div class="nav_wrapper"> -->
-                <nav class="NavMenu">
+                <nav class="header_nav NavMenu">
                 <ul class="menu">
                     <li class="menu_item"><a href="/">ホーム</a></li>
                     <li class="menu_item"><a href="/news/">お知らせ</a></li>
