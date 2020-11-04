@@ -101,6 +101,9 @@ function pagination( $pages, $paged, $range = 2, $show_only = false ) {
 }
 
 // 定数
+//イベント説明文字数制限
 define("textLength", 77);
-define("eventCount", 6);
+//イベント一覧表示数
+define("eventCount", 3);
+//ニュース一覧表示数
 define("newsCount", 5);
