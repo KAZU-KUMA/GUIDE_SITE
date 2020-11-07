@@ -495,17 +495,6 @@ input[type=submit]:hover, input[type=button]:hover, button:hover {
   background-color: #b86e00;
 }
 
-div.list_content {
-  width: calc(100%-200px/3);
-}
-
-@media screen and (max-width: 1023px) {
-  div.list_content {
-    width: 100%;
-    margin: 5px auto;
-  }
-}
-
 .photo_area img {
   width: 95%;
   margin: 10px;
@@ -518,6 +507,14 @@ div.list_content {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   gap: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+  .event_lists {
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+  }
 }
 
 .event_lists > .event_list:nth-of-type(1) {

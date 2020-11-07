@@ -104,7 +104,6 @@ $breakpoints: (
 }
 
 
-  
 //ヘッダー(ナビ)
 header {
     width: 100%;
@@ -180,6 +179,7 @@ nav ul.primary_nav{
          transform: translateX(-57%);
     }
 }
+
 //ハンバーガーメニュー(sp以下)
 .Toggle{
     display: none;
@@ -539,13 +539,13 @@ input[type=submit]:hover,input[type=button]:hover, button:hover{
   }
 
 // コンテンツ
-div.list_content{
-    width:calc(100%-200px/3);
-    @include mq('tab'){
-        width: 100%;
-        margin: 5px auto;
-    }
-}
+// div.list_content{
+//     width:calc(100%-200px/3);
+//     @include mq('tab'){
+//         width: 100%;
+//         margin: 5px auto;
+//     }
+// }
 
 .photo_area img{
     width: 95%;
@@ -559,6 +559,11 @@ div.list_content{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
     gap: 10px;
+    @include mq('tab'){
+        display: block;
+        width: 100%;
+        margin: 5px auto;
+    }
   }
 
 .event_lists>.event_list:nth-of-type(1) {
