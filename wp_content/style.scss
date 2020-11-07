@@ -1,0 +1,172 @@
+/*
+Theme Name: KAZUKI_THEME
+Theme URL: https://kuma-portfolio.com/
+Author: KAZUKI KUMAKURA
+Description:　オリジナルテーマ(2020.10.30)
+Version: 1.0
+*/
+
+@charset "utf-8";
+
+// カラー
+$black: #000;
+$white: #fff;
+$gray:  #CCC;
+$darkGray: #222;
+$aqua: #9FD6D2;
+$blue:  #00f;
+$red: #f00;
+$green: #56a04c;
+$orenge:#b86e00;
+$darkBlue: #242d81;
+
+/* ブレークポイント */
+$breakpoints: (
+  "sp": "screen and (max-width: 768px)",
+  "tab": "screen and (max-width: 1023px)",
+  "pc": "screen and (min-width: 1024px)",
+);
+
+// メディアクエリー
+@mixin mq($breakpoint: sp) {
+
+    @media #{map-get($breakpoints, $breakpoint)} {
+  
+      @content;
+    }
+}
+
+
+body {
+    font-family: 
+     "Helvetica Neue",
+      Arial,
+      "Hiragino Kaku Gothic ProN",
+      "Hiragino Sans",
+      Meiryo,
+      sans-serif;
+  }
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contents {
+    width: 100%;
+    background: $gray;
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+    .container {
+        min-height: calc(100vh - 300px);
+        justify-content: center;
+    }
+}
+
+
+a{
+    text-decoration :none;
+    transition: .2s;
+}
+
+h1{
+    color: $black;
+    font-size: 2.5rem;
+    @include mq('sp') {
+        font-size: 2.0rem;
+    }
+}
+
+h2{
+    color: $black;
+    font-size: 1.8rem;
+    @include mq('sp') {
+        font-size: 1.5rem;
+    }
+}
+
+h3{
+    color: $black;
+    font-size: 1.2rem;
+    @include mq('sp') {
+        font-size: 1.0rem;
+    }
+}
+
+p{
+    font-size: 1rem;
+    color:$black;
+}
+
+strong{
+    font-size: 120%;
+    font-weight: bold;
+}
+
+small {
+    font-size: 80%;
+}
+
+input{
+
+}
+
+
+ul{
+
+}
+
+li{
+    list-style: none;
+}
+
+dl {
+    padding-top: 16px;
+}
+dl+dl {
+    border-top: 1px solid #838383;
+}
+
+dd {
+    padding: 5px 0;
+}
+
+table {
+    width: 100%;
+    border: solid 1px $darkGray;
+    margin: 10px 0;
+    background-color: $white
+}
+
+th {
+    width: 20%;
+    text-align: center;
+    border-right: solid 1px $darkGray;
+    background-color: $gray;
+    padding: 10px;
+}
+
+td {
+    width: 80%;
+    padding: 10px;
+}
+
+tr {
+    border-bottom: dotted 1px $darkGray;
+}
+
+article {
+    margin: 20px;
+}
+ 
+section {
+    margin: 20px;
+}
+
+iframe{
+    width: 50%;
+    @include mq('sp') {
+        width: 100%;
+    }
+}

@@ -2,6 +2,7 @@
 // CSSを読み込む
 function my_styles() {
 	wp_enqueue_style( 'reset', get_template_directory_uri() . '/css/reset.css', array(), '1.0', false);
+    wp_enqueue_style( 'theme-style', get_template_directory_uri() . '/style.css', array('reset'), '1.0', false);
     wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', array('reset'), '1.0', false);
     wp_enqueue_style( 'style-slide', get_template_directory_uri() . '/slick/slick.css', array(), '1.0', false);
     wp_enqueue_style( 'style-slide2', get_template_directory_uri() . '/slick/slick-theme.css', array(), '1.0', false);
