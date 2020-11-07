@@ -103,4 +103,7 @@
         </div> <!--containers-->
     </div> <!--contents-->
 <main>
+<?php $GLOBALS['ADDITIONAL_FOOTER'] = function() {?>
+     <!-- このページのみJS -->
+<?php }?>
 <?php get_footer(); ?>

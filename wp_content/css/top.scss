@@ -60,24 +60,19 @@ $breakpoints: (
 }
 
 /* スライド */
-.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
-    position: absolute;
+.slick-dots {
     bottom: 30px;
 }
 
-.bx-wrapper {
-    background-color: transparent;
-    margin: 0px auto;
-    border: none;
-    box-shadow: none;
+.slick-dotted.slick-slider{
+    margin: 0;
+}
+.slick-slider {
     @include mq('sp'){
         display: none;
     }
 }
-.bx-wrapper img {
-    display: block;
-    margin: 0px auto;
-}
+
 
 /* ヘッダーナビ */
 .header_nav_top{

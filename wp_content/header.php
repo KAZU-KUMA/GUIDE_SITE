@@ -31,10 +31,10 @@
         </div>
     </div>
     <!-- スライド -->
-    <div class="slider">
+    <div class="slider lazy">
     <?php for ($i = 1; $i <= 5; $i++):?>
         <?php if ($slide_image = getImage('slide_image' . $i)):?>
-			<img src="<?=$slide_image;?>" height="600px"  alt="">
+			<div class="slide_img"><img data-lazy="<?=$slide_image;?>" height="600px" width=100%  alt=""></div>
         <?php endif?>
     <?php endfor?>
     </div>

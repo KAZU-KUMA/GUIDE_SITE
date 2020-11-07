@@ -3,29 +3,30 @@
 function my_styles() {
 	wp_enqueue_style( 'reset', get_template_directory_uri() . '/css/reset.css', array(), '1.0', false);
     wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', array('reset'), '1.0', false);
-    wp_enqueue_style( 'style2\-slide', '//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css');
+    wp_enqueue_style( 'style-slide', get_template_directory_uri() . '/slick/slick.css', array(), '1.0', false);
+    wp_enqueue_style( 'style-slide2', get_template_directory_uri() . '/slick/slick-theme.css', array(), '1.0', false);
 }
 add_action( 'wp_enqueue_scripts', 'my_styles' );
 
-// JavaScriptを読み込む
-function my_scripts() {
-    wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '1.0', true );
-}
-add_action( 'wp_enqueue_scripts', 'my_scripts' );
 
 //JQuery読み込み
 function custom_print_scripts() {
-	if (!is_admin()) {
-	  //デフォルトjquery削除
-	  wp_deregister_script('jquery');
-	  
-	  //読み込む
-     wp_enqueue_script('jquery-js', '//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' );
-     wp_enqueue_script('jquery-slide', '//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js' );
+    if (!is_admin()) {
+        //デフォルトjquery削除
+        wp_deregister_script('jquery');
+        
+        //読み込む
+        wp_enqueue_script('jquery-js', '//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' );
     }
-  }
-  add_action('wp_enqueue_scripts', 'custom_print_scripts');
-  
+}
+add_action('wp_enqueue_scripts', 'custom_print_scripts');
+
+// JavaScriptを読み込む
+function my_scripts() {
+    wp_enqueue_script( 'slide-script', get_template_directory_uri() . '/slick/slick.min.js', array(), '1.0', true );
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '1.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'my_scripts' );
 
 // 文字数制限、limitを超えた場合、末尾を…に置換
 function limit_length( $str, $limit ) {

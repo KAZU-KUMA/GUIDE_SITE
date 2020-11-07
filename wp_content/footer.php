@@ -28,6 +28,12 @@
 
 
     <script src="<?=get_template_directory_uri();?>/js/scrpt.js" type="text/javascript"></script>
+    <?php
+		// 追加のフッター
+		if (@$GLOBALS['ADDITIONAL_FOOTER']) {
+			$GLOBALS['ADDITIONAL_FOOTER']();
+		}
+	?>
     <?php wp_footer(); ?>
 </body>
 </html>

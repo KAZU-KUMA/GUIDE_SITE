@@ -1,16 +1,25 @@
 'use strict';
 
-{
 // スライドショー
-jQuery(document).ready(function(){
-  jQuery('.slider').bxSlider({
-      auto: true,
-      mode: 'fade',
-      pause: 5000,
-      captions: true
-  });
+jQuery(function() {
+    jQuery('.slider').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 1500,
+    arrows: false,
+    dots: true,
+    fade: true,
+    infinite: true,
+    mobileFirst: true,
+    pauseOnHover: false,
+    });
 });
-}
+
+jQuery(function() {
+  jQuery('.lazy').slick({
+    lazyLoad: 'ondemand',
+  }); 
+});
 
 
 // ドロップメニュー
