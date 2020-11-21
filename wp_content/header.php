@@ -17,11 +17,15 @@
         }
     ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
+<!-- <div id="wptime-plugin-preloader"></div> -->
 <?php
 	if(is_front_page()){
 	/* トップページ */
 ?>
+    <div class="loading">
+         <img src="<?= get_template_directory_uri(); ?>/img/loading.gif" />
+    </div>
     <!-- ヘッダーについて -->
     <header class="header">
     <div class="header_container">
@@ -34,7 +38,7 @@
     <div class="slider lazy">
     <?php for ($i = 1; $i <= 5; $i++):?>
         <?php if ($slide_image = getImage('slide_image' . $i)):?>
-			<div class="slick-slide"><img data-lazy="<?=$slide_image;?>" height="600px" width=100%  alt=""></div>
+            <div class="slick-slide"><img data-lazy="<?=$slide_image;?>" height="600px" width=100%  alt=""></div>
         <?php endif?>
     <?php endfor?>
     </div>

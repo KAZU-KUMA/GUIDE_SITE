@@ -74,3 +74,8 @@ jQuery(function() {
   　});
   });
 });
+
+// ローディング
+jQuery(window).on('load', function(){
+	jQuery('.loading').fadeOut();	
+});

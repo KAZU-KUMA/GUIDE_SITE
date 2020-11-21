@@ -40,7 +40,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .slick-slider {
+  .slick-slider, .loading {
     display: none;
   }
 }

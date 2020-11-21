@@ -64,7 +64,7 @@ $breakpoints: (
 .slick-dotted.slick-slider{
     margin: 0;
 }
-.slick-slider {
+.slick-slider, .loading{
     @include mq('sp'){
         display: none;
     }
