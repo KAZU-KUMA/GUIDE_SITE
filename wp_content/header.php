@@ -34,7 +34,7 @@
     <div class="slider lazy">
     <?php for ($i = 1; $i <= 5; $i++):?>
         <?php if ($slide_image = getImage('slide_image' . $i)):?>
-			<div class="slide_img"><img data-lazy="<?=$slide_image;?>" height="600px" width=100%  alt=""></div>
+			<div class="slick-slide"><img data-lazy="<?=$slide_image;?>" height="600px" width=100%  alt=""></div>
         <?php endif?>
     <?php endfor?>
     </div>

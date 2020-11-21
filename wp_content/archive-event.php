@@ -6,7 +6,7 @@
         <div class="container">
             <ul class="breadcrumb">
                 <li><a href="/">TOP</a></li>
-                <li><?php the_title();?></li>
+                <li>イベント一覧</li>
             </ul>
 
                 <h1 class="title">イベント一覧</h1>

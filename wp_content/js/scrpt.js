@@ -15,6 +15,7 @@ jQuery(function() {
     });
 });
 
+//遅延表示
 jQuery(function() {
   jQuery('.lazy').slick({
     lazyLoad: 'ondemand',

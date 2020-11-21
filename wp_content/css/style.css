@@ -88,6 +88,10 @@ footer ul {
   margin-bottom: 15px;
 }
 
+footer .copyright {
+  background-color: #9FD6D2;
+}
+
 nav ul {
   display: flex;
   justify-content: space-around;

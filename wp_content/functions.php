@@ -14,8 +14,7 @@ add_action( 'wp_enqueue_scripts', 'my_styles' );
 function custom_print_scripts() {
     if (!is_admin()) {
         //デフォルトjquery削除
-        wp_deregister_script('jquery');
-        
+        wp_deregister_script('jquery');     
         //読み込む
         wp_enqueue_script('jquery-js', '//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' );
     }
