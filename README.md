@@ -21,4 +21,7 @@ pass: P(idWfCe)KUr$j7Q)gN1HiFv
 - 言語・・・HTML/CSS、PHP
 - フレームワーク、ライブラリ・・・ JQuery、WordPress
 - ツール・・・GitHub(バージョン管理)、 FileZilla(FTPソフト)
-- OS・・・Windows10
+- OS・・・Windows10　
+
+## 制作者
+熊倉 一樹
