@@ -261,6 +261,7 @@ nav ul.primary_nav{
             left: 6px;
             width: 30px;
             border-bottom: solid 3px $black;
+            transition: .35s ease-in-out;
         }
                 
         span:nth-child(1) {
@@ -275,6 +276,22 @@ nav ul.primary_nav{
             top: 27px;
         }
     }
+}
+
+/* 最初のspanをマイナス45度に */
+.Toggle.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    transform: rotate(-45deg);
+    border-bottom: solid 3px $white;
+}
+ 
+/* 2番目と3番目のspanを45度に */
+.Toggle.active span:nth-child(2),
+.Toggle.active span:nth-child(3) {
+    top: 18px;
+    transform: rotate(45deg);
+    border-bottom: solid 3px $white;
 }
 
 /* パンくずリスト */

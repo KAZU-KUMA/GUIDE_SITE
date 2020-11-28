@@ -22,6 +22,10 @@ jQuery(function() {
   }); 
 });
 
+// ローディング
+jQuery(window).on('load', function(){
+	jQuery('.loading').fadeOut();	
+});
 
 // ドロップメニュー
 jQuery(function() {
@@ -47,10 +51,10 @@ jQuery(function(){
   //ボタンの表示設定
   jQuery(window).scroll(function(){
     if(jQuery(this).scrollTop()>80){
-      //---- 画面を80pxスクロールしたら、ボタンを表示する
+      //画面を80pxスクロールしたら、ボタンを表示する
       topBtn.fadeIn();
     }else{
-      //---- 画面が80pxより上なら、ボタンを表示しない
+      //画面が80pxより上なら、ボタンを表示しない
       topBtn.fadeOut();
     }
   });
@@ -67,15 +71,10 @@ jQuery(function() {
   　　jQuery(this).toggleClass('active');
   
   　if (jQuery(this).hasClass('active')) {
-  　　jQuery('.NavMenu').addClass('active');　 //クラスを付与
+  　　jQuery('.NavMenu').addClass('active');　 
   　} else {
-  　　jQuery('.NavMenu').removeClass('active'); //クラスを外す
+  　　jQuery('.NavMenu').removeClass('active'); 
   　}
   　});
   });
-});
-
-// ローディング
-jQuery(window).on('load', function(){
-	jQuery('.loading').fadeOut();	
 });

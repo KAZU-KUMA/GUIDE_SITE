@@ -204,6 +204,7 @@ nav a:hover {
     left: 6px;
     width: 30px;
     border-bottom: solid 3px #000;
+    transition: .35s ease-in-out;
   }
   .Toggle span:nth-child(1) {
     top: 9px;
@@ -214,6 +215,22 @@ nav a:hover {
   .Toggle span:nth-child(3) {
     top: 27px;
   }
+}
+
+/* 最初のspanをマイナス45度に */
+.Toggle.active span:nth-child(1) {
+  top: 18px;
+  left: 6px;
+  transform: rotate(-45deg);
+  border-bottom: solid 3px #fff;
+}
+
+/* 2番目と3番目のspanを45度に */
+.Toggle.active span:nth-child(2),
+.Toggle.active span:nth-child(3) {
+  top: 18px;
+  transform: rotate(45deg);
+  border-bottom: solid 3px #fff;
 }
 
 /* パンくずリスト */
