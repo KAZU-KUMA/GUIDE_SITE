@@ -6,7 +6,7 @@
 
 ## 掲示板サイト
 使用言語：HTML/CSS、PHP、SQL
-![message_board](https://user-images.githubusercontent.com/65232447/99896818-7657fa00-2cd7-11eb-95e1-e41c6b993459.png)
+![message_board](https://user-images.githubusercontent.com/65232447/100494267-9bd77e80-3183-11eb-92b5-da37a21fd95c.png)
 
 ## オリジナルECサイト
 使用言語：HTML/CSS、JS、PHP、SQL  
