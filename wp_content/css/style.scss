@@ -463,7 +463,7 @@ aside{
         border: none;
     }
     li a:hover {
-        background-color: $gray;
+        background-color: $aqua;
       }
   }
 
@@ -483,10 +483,6 @@ input[type=text], input[type=email],select, textarea {
 
 input[type=text], input[type=email] {
     height: 25px;
-}
-
-textarea{
-    font-size: 1.5rem;
 }
 
 input[type=submit], input[type=button], button{
