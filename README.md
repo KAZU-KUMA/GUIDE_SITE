@@ -18,9 +18,8 @@ pass: P(idWfCe)KUr$j7Q)gN1HiFv
 
 
 ## 作成言語と環境
-- 言語・・・HTML/CSS、PHP
-- フレームワーク、ライブラリ・・・ JQuery、WordPress
-- ツール・・・GitHub(バージョン管理)、 FileZilla(FTPソフト)
+- 言語・・・HTML/CSS、PHP、JQuery
+- ツール・・・WordPress、GitHub(バージョン管理)、FileZilla(FTPソフト)
 - OS・・・Windows10　
 
 ## 制作者
