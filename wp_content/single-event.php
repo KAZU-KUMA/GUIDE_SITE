@@ -39,9 +39,9 @@
                         <tr><th>備考</th><td><?=esc_html(get_field('event_other'));?></td></tr>
                     </table>
                 </div>
+                <div class="btn"><a href="/event/">戻る</a></div>
             </div>
             </div>
-            <div class="btn"><a href="/event/">戻る</a></div>
         </div> <!--containers-->
     </div> <!--contents-->
 <main>

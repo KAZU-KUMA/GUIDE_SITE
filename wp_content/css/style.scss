@@ -348,8 +348,9 @@ nav ul.primary_nav{
 
 /* ボタン*/
 .btn, .btn a{
+    position:relative;
     display: block;
-    width: 280px;
+    width: 100%;
     height: 60px;
     line-height: 55px;
     color: $white;
@@ -359,6 +360,7 @@ nav ul.primary_nav{
     border: 1px solid $black;
     background-color: $black;
 }
+
 
 .btn:hover, .btn a:hover{
     background-color: $darkGray; 
@@ -455,16 +457,22 @@ aside{
 
   /* プルダウンメニュー */
 .primary_nav > li {
-    float:left;
     position:relative;
     margin:15px;
+    width: 100%;
+    @include mq('sp'){
+        margin:15px 0;
+     }
   }
   
   .secondary_nav {
     position:absolute;
-    width:280px;
+    width: 100%;
     display:none;
     z-index:10;
+    @include mq('sp'){
+        margin-left: 7%;
+     }
     li a{
         display:block;
         height:50px;
