@@ -27,7 +27,7 @@ jQuery(window).on('load', function(){
 	jQuery('.loading').fadeOut();	
 });
 
-// ドロップメニュー
+// ドロップダウンメニュー
 jQuery(function() {
   jQuery(".fade > li").hover(
     function() {
