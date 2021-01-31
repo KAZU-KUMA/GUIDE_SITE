@@ -11,7 +11,7 @@
 ## オリジナルECサイト
 使用言語：HTML/CSS、JS、PHP、SQL  
 [URL]  
-成果物(WEBサイト)：http://118.27.24.202//login.php  
+成果物(WEBサイト)：http://153.126.204.74//login.php
 ソースコード(GitHub)：https://github.com/KAZU-KUMA/CODE_PRODUCTS  
 [ログイン情報]  
 管理者としてログイン  
