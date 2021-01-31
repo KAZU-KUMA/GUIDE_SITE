@@ -8,7 +8,7 @@
 使用言語：HTML/CSS、PHP、SQL
 ![message_board](https://user-images.githubusercontent.com/65232447/100494267-9bd77e80-3183-11eb-92b5-da37a21fd95c.png)
 
-## オリジナルECサイト
+## オリジナルECサイト[スクール卒業課題]
 使用言語：HTML/CSS、JS、PHP、SQL  
 [URL]  
 成果物(WEBサイト)：http://153.126.204.74//login.php
