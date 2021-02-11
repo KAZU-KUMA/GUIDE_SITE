@@ -1,4 +1,4 @@
-# STUDY
+# StudyWorks
 
 ## HTML/CSS
 
