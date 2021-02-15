@@ -29,6 +29,28 @@
 16．[マウスストーカー](http://153.126.204.74/study/sample11.html)  
 17．[日時](http://153.126.204.74/study/sample09.html)
 
-## PHP/SQL
+## PHP/SQL/WordPress
 
-現在作成中...
+1．[ECサイト](http://153.126.204.74//login.php )  
+使用言語：HTML/CSS、JS、PHP、SQL  
+[URL]  
+成果物(WEBサイト)：http://153.126.204.74//login.php  
+ソースコード(GitHub)：https://github.com/KAZU-KUMA/CODE_PRODUCTS  
+[ログイン情報]  
+管理者としてログイン  
+id: admin  
+pass: admin  
+一般ユーザーとしてログイン  
+id: sampleuser  
+pass: password  
+
+2．[観光ガイド](https://kuma-portfolio.com/)  
+使用言語：HTML/CSS、JS、PHP、WordPress  
+[URL]  
+成果物(WEBサイト)：https://kuma-portfolio.com/  
+ソースコード(GitHub)：https://github.com/KAZU-KUMA/DEMO_SITE  
+[ログイン情報(Basic認証)]  
+id: admin  
+pass: kuma1234 
+
+
