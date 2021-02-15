@@ -7,7 +7,7 @@
 ３．[CorporateSite](http://153.126.204.74/sample/lesson3/index.html)        
 ４．[CorporateSite](http://153.126.204.74/sample/lesson4/index.html)        
 ５．[Flex](http://153.126.204.74/study/index02.html)  
-６．[Grid](http://153.126.204.74/study/index02.html)  
+６．[Grid](http://153.126.204.74/study/index03.html)  
 
 [ログイン情報(Basic認証)]  
 id: admin  
