@@ -6,21 +6,13 @@
 
 ## URL
 成果物(WEBサイト)：https://kuma-portfolio.com/  
-WordPress管理画面：https://kuma-portfolio.com/wp-admin/index.php  
 ソースコード(GitHub)：https://github.com/KAZU-KUMA/DEMO_SITE  
-[ログイン情報]  
-●Basic認証  
+[ログイン情報(Basic認証)]  
 id: admin  
 pass: kuma1234  
-●管理画面  
-id: qrki1ulf3d@gmail.com    
-pass: P(idWfCe)KUr$j7Q)gN1HiFv  
 
-
-## 作成言語と環境
-- 言語・・・HTML/CSS、PHP、JQuery
-- ツール・・・WordPress、GitHub(バージョン管理)、FileZilla(FTPソフト)
-- OS・・・Windows10　
+## 使用言語
+-言語、ツール・・・HTML/CSS、JS、PHP、WordPress
 
 ## 制作者
 熊倉 一樹
