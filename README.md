@@ -11,8 +11,10 @@
 id: admin  
 pass: kuma1234  
 
-## 使用言語
--言語、ツール・・・HTML/CSS、JS、PHP、WordPress
+## 作成言語と環境
+- 言語・・・HTML/CSS、JS、PHP  
+- ツール・・・GitHub(バージョン管理)、 WordPress(CMS)  
+- OS・・・Windows  
 
 ## 制作者
 熊倉 一樹
