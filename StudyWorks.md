@@ -7,7 +7,11 @@
 ３．[CorporateSite](http://153.126.204.74/sample/lesson3/index.html)        
 ４．[CorporateSite](http://153.126.204.74/sample/lesson4/index.html)        
 ５．[Flex](http://153.126.204.74/study/index02.html)  
-６．[Grid](http://153.126.204.74/study/index02.html)
+６．[Grid](http://153.126.204.74/study/index02.html)  
+
+[ログイン情報(Basic認証)]  
+id: admin  
+pass: kuma1234  
 
 ## JQUERY/JS
 
@@ -27,7 +31,11 @@
 14．[Before&After(twentytwenty)](http://153.126.204.74/study/sample19.html)  
 15．[読み込み](http://153.126.204.74/study/sample10.html)  
 16．[マウスストーカー](http://153.126.204.74/study/sample11.html)  
-17．[日時](http://153.126.204.74/study/sample09.html)
+17．[日時](http://153.126.204.74/study/sample09.html)  
+
+[ログイン情報(Basic認証)]  
+id: admin  
+pass: kuma1234  
 
 ## PHP/SQL/WordPress
 
