@@ -32,7 +32,7 @@ pass: kuma1234
 15．[読み込み](http://153.126.204.74/study/sample10.html)  
 16．[マウスストーカー](http://153.126.204.74/study/sample11.html)  
 17．[日時](http://153.126.204.74/study/sample09.html)  
-18．[花吹雪](http://153.126.204.74/study/sample21.html)  
+18．[花吹雪(Snowfall)](http://153.126.204.74/study/sample21.html)  
 
 [ログイン情報(Basic認証)]  
 id: admin  
