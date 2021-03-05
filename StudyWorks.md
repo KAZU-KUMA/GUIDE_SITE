@@ -63,7 +63,7 @@ id: admin
 pass: kuma1234 
 
 ## デザイン  
-1.[バナー](http://153.126.204.74/study/design01.html)  
-2.ランディングページ
+1.　[バナー](http://153.126.204.74/study/design01.html)  
+2.　ランディングページ
 現在作成中...
 
