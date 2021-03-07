@@ -58,7 +58,7 @@ pass: password
 使用言語・ツール：HTML/CSS、JS、PHP、WordPress  
 [URL]  
 成果物(WEBサイト)：https://kuma-portfolio.com/  
-ソースコード(GitHub)：https://github.com/KAZU-KUMA/DEMO_SITE  
+ソースコード(GitHub)：https://github.com/KAZU-KUMA/GUIDE_SITE  
 [ログイン情報(Basic認証)]  
 id: admin  
 pass: kuma1234 
