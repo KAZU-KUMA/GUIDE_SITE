@@ -63,7 +63,7 @@ pass: password
 id: admin  
 pass: kuma1234 
 
-## デザイン  
+## DESIGN(Photoshop/Illustrator)  
 1.　[バナー](http://153.126.204.74/study/design01.html)  
 2.　[ランディングページ](http://153.126.204.74/study/design02.html)  
 
