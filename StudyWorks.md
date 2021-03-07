@@ -65,7 +65,7 @@ pass: kuma1234
 
 ## デザイン  
 1.　[バナー](http://153.126.204.74/study/design01.html)  
-2.　[ランディングページ](http://153.126.204.74/study/design0.html)  
+2.　[ランディングページ](http://153.126.204.74/study/design02.html)  
 
 
 [ログイン情報(Basic認証)]  
