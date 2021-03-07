@@ -10,6 +10,10 @@
 [管理画面](http://153.126.204.74/school/VendingMachine/tool.php)/[購入画面](http://153.126.204.74/school/VendingMachine/index.php)  
 使用言語：HTML/CSS、PHP、SQL  
 
+[ログイン情報(Basic認証)]  
+id: admin  
+pass: kuma1234  
+
 
 
 
