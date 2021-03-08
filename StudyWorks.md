@@ -53,6 +53,10 @@ pass: admin
 一般ユーザーとしてログイン  
 id: sampleuser  
 pass: password  
+[その他]  
+[コンセプトシート](https://docs.google.com/presentation/d/e/2PACX-1vRHZFbUvCaDwx9wNjqnDOhjDXosQs5MxPFbNIf8yLIbBeGkizOBZV3vMD71CurL5IJH3CQYD3V4qWSs/pub?start=false&loop=false&delayms=3000&slide=id.g884934fa08_1_132)  
+[サイトマップ・ワイヤーフレーム](https://docs.google.com/presentation/d/e/2PACX-1vTkiNCIhdDyYe9uCzu5IJLGIW5vTGLBjlwJgMW97oFPt9RmYAY9Z63pC_aS0ZaOWAmB4hpA5n21CTgB/pub?start=false&loop=false&delayms=3000&slide=id.g80b6363779_0_0)  
+[テーブル定義書・テスト仕様書](https://docs.google.com/spreadsheets/d/e/2PACX-1vRd22QJfTEqvJqLu-G5inUQYFfzQd2p0con8FNSAK9GJbkASp89mtj9-TVlqJfGnhH_p4gNsSajm6gI/pubhtml#)  
 
 2．[観光ガイド](https://kuma-portfolio.com/)  
 使用言語・ツール：HTML/CSS、JS、PHP、WordPress  
