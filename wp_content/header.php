@@ -29,7 +29,7 @@
     <header class="header">
     <div class="header_container">
         <!-- ロゴ -->
-        <div class="header_logo_top">
+        <div class="logo">
             <h1>新潟県観光ガイド</h1>
         </div>
     </div>
@@ -43,14 +43,14 @@
     </div>
     <!-- ヘッダーメニュー -->
     <div class="nav_wrapper">
-        <nav class="header_nav_top NavMenu">
-                <ul class="menu_top">
-                    <li class="menu_item"><a href="/">ホーム</a></li>
-                    <li class="menu_item"><a href="/news/">お知らせ</a></li>
-                    <li class="menu_item"><a href="/event/">イベント情報</a></li>
-                    <li class="menu_item"><a href="/contact/">お問い合わせ</a></li>
-                </ul>
-                </nav>
+        <nav class="header_menu_top header_menu">
+            <ul>
+                <li><a href="/">ホーム</a></li>
+                <li><a href="/news/">お知らせ</a></li>
+                <li><a href="/event/">イベント情報</a></li>
+                <li><a href="/contact/">お問い合わせ</a></li>
+            </ul>
+        </nav>
                 <!-- ハンバーガーメニュー --> 
                 <div class="Toggle">
                 　　<span></span>
@@ -75,12 +75,12 @@
 
         <div class="right">
             <!-- ナビメニュー -->
-            <nav class="header_nav NavMenu">
-            <ul class="menu">
-                <li class="menu_item"><a href="/">ホーム</a></li>
-                <li class="menu_item"><a href="/news/">お知らせ</a></li>
-                <li class="menu_item"><a href="/event/">イベント情報</a></li>
-                <li class="menu_item"><a href="/contact/">お問い合わせ</a></li>
+            <nav class="header_menu">
+            <ul>
+                <li><a href="/">ホーム</a></li>
+                <li><a href="/news/">お知らせ</a></li>
+                <li><a href="/event/">イベント情報</a></li>
+                <li><a href="/contact/">お問い合わせ</a></li>
             </ul>
             </nav>
             <!-- ハンバーガーメニュー --> 

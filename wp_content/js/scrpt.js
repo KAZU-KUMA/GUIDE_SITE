@@ -55,9 +55,9 @@ jQuery(function() {
   　　jQuery(this).toggleClass('active');
     //メニュー表示/非表示
   　if (jQuery(this).hasClass('active')) {
-  　　jQuery('.NavMenu').addClass('active');　 
+  　　jQuery('.header_menu').addClass('active');　 
   　} else {
-  　　jQuery('.NavMenu').removeClass('active'); 
+  　　jQuery('.header_menu').removeClass('active'); 
   　}
   　});
   });

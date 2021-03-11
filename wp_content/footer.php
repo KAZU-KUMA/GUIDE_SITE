@@ -5,7 +5,7 @@
     <footer class="footer">
         <div class="container">
             <!-- フッターメニュー -->
-            <nav class="menu">
+            <nav>
                 <ul>
                     <li><a href="/privacy/">プライバシーポリシー</a></li>
                     <li><a href="/contact/">お問い合わせ</a></li>

@@ -10,13 +10,13 @@
         <div class="container">
             <!-- 重要なお知らせ -->
             <?php if($top_news = get_field('top_news')):?>
-                <div class="noticeBox">
+                <div class="notice_box">
                     <h3>重要なお知らせ</h3>
                     <div class="txtArea"><p><?=$top_news;?></p></div>
                 </div>
             <?php endif; ?>
             <!-- トップニュース -->
-            <div class="noticeBox">
+            <div class="notice_box">
             <h3>ニュース</h3>
             <div class="top_news">
                 <?php
@@ -43,7 +43,7 @@
               </div>
             </div>
             <!-- トップイベント -->
-            <div class="noticeBox">
+            <div class="notice_box">
                 <h3>イベント情報</h3>
                 <div class="top_event">
                     <ul class="event_lists flex_tab">
