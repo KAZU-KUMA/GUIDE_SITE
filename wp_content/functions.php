@@ -64,8 +64,7 @@ function pagination( $pages, $paged, $range = 2, $show_only = false ) {
         return;
     }
 
-    // １ページのみで表示設定もない場合
-    if ( $pages === 1 ) return;    
+    if ( $pages === 1 ) return;    // １ページのみで表示設定もない場合
 
     if ( 1 !== $pages ) {
         //２ページ以上の時

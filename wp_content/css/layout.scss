@@ -1,0 +1,682 @@
+@charset "utf-8";
+
+// fonts
+$fonts:"Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", YuGothic, "Yu Gothic", "Segoe UI", Verdana, Meiryo, sans-serif;
+
+
+// カラー
+$black: #000;
+$white: #fff;
+$gray:  #CCC;
+$darkGray: #222;
+$aqua: #9FD6D2;
+$blue:  #00f;
+$red: #f00;
+$green: #56a04c;
+$orenge:#b86e00;
+$darkBlue: #242d81;
+
+// ブレークポイント
+$breakpoints: (
+  "sp": "screen and (max-width: 450px)",
+  "tab": "screen and (max-width: 767px)",
+  "tab2": "screen and (max-width: 1024px)",
+  "pc": "screen and (min-width: 1024px)",
+);
+
+// メディアクエリー
+@mixin mq($breakpoint: sp) {
+
+    @media #{map-get($breakpoints, $breakpoint)} {
+  
+      @content;
+    }
+}
+  
+// @include mq('tab') {
+//     .pc {
+//         display: none !important;
+//     }
+//     .tab {
+//         display: block !important;
+//     }
+// }
+// @include mq('sp') {
+//     .pc {
+//         display: none !important;
+//     }
+//     .sp {
+//         display: block !important;
+//     }
+// }
+
+//全体レイアウト
+body {
+	// font-size: 14rem;
+	font-family: $fonts;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contents {
+    width: 100%;
+    background: $gray;
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+    .container {
+        min-height: calc(100vh - 300px);
+        justify-content: center;
+    }
+}
+
+//共通
+
+// a
+a{
+    text-decoration :none;
+    transition: .2s;
+}
+//h1
+h1{
+    color: $black;
+    font-weight: bold;
+    font-size: 2.5rem;
+    @include mq('sp') {
+        font-size: 2.0rem;
+    }
+}
+
+// h2
+h2{
+    color: $black;
+    font-weight: bold;
+    font-size: 1.8rem;
+    @include mq('sp') {
+        font-size: 1.5rem;
+    }
+}
+// h3
+h3{
+    color: $black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    @include mq('sp') {
+        font-size: 1.0rem;
+    }
+}
+
+p{
+    font-size: 1rem;
+    color:$black;
+}
+
+// strong
+strong{
+    font-size: 120%;
+    font-weight: bold;
+}
+// small
+small {
+    font-size: 80%;
+}
+// input
+
+// ul
+ul{
+
+}
+// li
+li{
+    list-style: none;
+}
+// dl
+dl {
+    padding-top: 16px;
+}
+dl+dl {
+    border-top: 1px solid #838383;
+}
+// dd
+dd {
+    padding: 5px 0;
+}
+// table
+table {
+    width: 100%;
+    border: solid 1px $darkGray;
+    margin: 10px 0;
+    background-color: $white
+}
+// th
+th {
+    width: 20%;
+    text-align: center;
+    border-right: solid 1px $darkGray;
+    background-color: $gray;
+    padding: 10px;
+}
+// td
+td {
+    width: 80%;
+    padding: 10px;
+}
+// tr
+tr {
+    border-bottom: dotted 1px $darkGray;
+}
+// article
+article {
+    margin: 20px;
+}
+// section  
+section {
+    margin: 20px;
+}
+
+// iframe{
+iframe{
+    width: 50%;
+    @include mq('sp') {
+       width: 100%;
+    }
+}
+
+// title
+.title {
+    font-size: 1.8rem;
+    margin: 20px 0;
+}
+// sub_title 
+.sub_title {
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+// day
+.days {
+    color: $blue;
+}
+
+// left
+.left{
+    margin-right: auto;
+    // float: left;
+}
+
+// right
+.right{
+    margin-left: auto;
+    // float: right;
+}
+
+// center
+.center{
+    margin:0 auto;
+}
+
+//textCenter
+.textCenter{
+    text-align: center;
+}
+
+// flex
+.flex_tab{
+    display: flex;
+    @include mq('tab2'){
+        display: block;
+    }
+}
+
+.flex_sp{
+    display: flex;
+    @include mq('sp'){
+        display: block;
+    }
+}
+
+
+// bold
+.bold {
+    font-weight: bold;
+    margin:2px;
+}
+  
+//ヘッダー(ナビ)
+header {
+    width: 100%;
+    background-color: $white;
+    .container {
+        display: flex;
+        background-color: $white;
+        @include mq('tab') {
+            display: block;
+        }
+      }
+
+    h1 {
+        text-shadow: 2px 2px 3px $darkGray;
+    }
+
+}
+
+//フッター
+footer{
+    width: 100%;
+    height:180px;
+    background-color: $aqua;
+    .container {
+        background-color: $aqua;
+        // padding: 0;
+    }
+
+    ul{
+        margin-bottom: 15px;
+    }
+}
+
+//ナビ(ヘッダー、フッター)
+nav{
+    ul{
+        display: flex;
+        justify-content: space-around;
+        @include mq('sp') {
+            display: block;
+            margin: 20px;
+        }
+    }
+
+    a{
+        color: $black;
+        display: block;
+        padding: 0 20px;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    a:hover{
+        border-bottom: 1px solid $blue;
+    }
+
+}
+
+//ハンバーガーメニュー(sp以下)
+.Toggle{
+    display: none;
+}
+
+@include mq('sp') {
+    .NavMenu{
+        position: fixed; 
+        z-index: 2;
+        top: 0;
+        left: 0; 
+        background: $white;
+        color: $black;
+        text-align: center;
+        width: 100%;
+        transform: translateY(-100%); 
+        transition: all 0.6s;
+
+        ul{
+        background: $darkGray;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        padding: 0;
+
+            li{
+                font-size: 1.1em;
+                list-style-type: none;
+                padding: 0;
+                width: 100%;
+                border-bottom: 1px dotted $white;
+                    a{
+                    display: block; 
+                    color: $white;
+                    padding: 1em 0;
+                    }
+
+                    a:hover{
+                        border-bottom: none;
+                        background-color: $darkGray;
+                        color: $white;
+                    }
+
+                    a:active{
+                        border-bottom: none;
+                        background-color: $darkGray;
+                        color: $white;
+                    }
+            }
+
+            li:last-child{
+                padding-bottom: 0;
+                border-bottom: none; 
+            }
+        }
+    }
+
+    .NavMenu.active{
+        transform: translateY(0%);
+    }
+
+
+    .Toggle {
+        display: block;
+        position: fixed;
+        right: 15px;
+        top: 18px;
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+        z-index: 3;
+            span {
+                display: block;
+                position: absolute;
+                left: 6px;
+                width: 30px;
+                border-bottom: solid 3px $black;
+            }
+                    
+            span:nth-child(1) {
+                top: 9px;
+            }
+                
+            span:nth-child(2) {
+                top: 18px;
+            }
+                
+            span:nth-child(3) {
+                top: 27px;
+            }
+    }
+}
+
+/* パンくずリスト */
+.breadcrumb li {
+    color: $black;
+    display: inline;
+    list-style: none;
+    a{
+        color:$darkGray;
+    }
+
+    a:hover {
+        color:$orenge
+    }
+}
+
+.breadcrumb{
+    li:after {
+        content: '>';
+        padding: 0 5px 0 10px;
+        color: $darkGray;
+    }
+
+    li:last-child::after {
+        content: normal;
+    }
+}
+
+
+/* 先頭へ */
+#pageTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    i{
+        font-size: 20px;
+    }
+
+    a{
+        display: block;
+        z-index: 10;
+        width: 40px;
+        height: 40px;
+        background-color: $darkGray;
+        border: 1px solid $darkGray;
+        color: $white;
+        text-align: center;
+        line-height: 40px;
+    }
+    a:hover{
+        opacity: 0.7;
+    }
+  }
+
+/* ボタン*/
+.btn, .btn a{
+    display: block;
+    width: 280px;
+    height: 60px;
+    line-height: 55px;
+    color: $white;
+    font-weight: 700;
+    text-align: center;
+    margin:0 auto;
+    border: 1px solid $black;
+    background-color: $black;
+}
+
+.btn:hover, .btn a:hover{
+    background-color: $darkGray; 
+}
+
+
+
+/* サイドバー */
+aside{
+    .listArea {
+        padding: 20px;
+        border:1px solid $black;
+        background-color: $white;
+    }
+    .listArea ul li{
+        font-size: 1.2rem;
+        position: relative;
+        margin: 10px 20px;
+        list-style-type: square;
+        border-style: double;
+    }
+    a{
+        color:$black;
+    }
+    a:hover{
+        color:$orenge;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    margin: 20px auto;
+    // justify-content: center;
+}
+  
+.main {
+    width: 80%;
+    @include mq('tab'){
+        width: 100%;
+    }
+}
+
+.side {
+    width: 20%;
+    margin-right:20px;
+    @include mq('tab'){
+        display: none;
+    }
+}
+
+
+
+/* ページネーション */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    position: relative;
+    font-size: 13px;
+    span, a{
+        display: block;
+        width: auto;
+        margin: 4px;
+        padding: 8px;
+        border: 1px solid $black;
+        background-color: $white;
+        color: $black;
+        text-decoration: none;
+        text-align: center;
+        line-height: 16px;
+    } 
+    a:hover,.current{
+        color: $white;
+        border-color: $black;
+        background-color: $black;
+    }
+    a.prev{
+        margin-right: 16px;
+    }
+    a.next{
+        margin-left: 16px;
+    }
+    .pager {
+        width: 2rem;
+    }
+    span.page_num {
+        display: none;
+    }
+        @include mq('sp'){
+        a.first, a.last {
+            display: none;
+        }
+    }
+  }
+
+  /* プルダウンメニュー */
+.primary_nav > li {
+    float:left;
+    position:relative;
+    margin:15px;
+  }
+  
+  .secondary_nav {
+    position:absolute;
+    width:280px;
+    display:none;
+    z-index:10;
+    li a{
+        display:block;
+        height:50px;
+        padding:0 20px;
+        line-height:50px;
+        background-color:$white;
+        color:$black;
+        border-bottom: 1px solid $black;
+        transition: all 0.5s;
+        text-align: center;
+    }
+    li:last-child a {
+        border: none;
+    }
+    li a:hover {
+        background-color: $gray;
+      }
+  }
+
+// フォーム
+input[type=text], input[type=email],select, textarea {
+    display: block;
+    width: 50%;
+    padding: 6px 12px;
+    font-size: 1rem;
+    background-color: $white;
+    border: 1px solid $gray;
+    border-radius: 4px;
+    @include mq('tab'){
+        width: 90%;
+    }
+}
+
+input[type=text], input[type=email] {
+    height: 25px;
+}
+
+textarea{
+    font-size: 1.5rem;
+}
+
+input[type=submit], input[type=button], button{
+    color: $white;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid $black;
+    background-color: $black;
+}
+
+input[type=submit]:hover,input[type=button]:hover, button:hover{
+    border: 1px solid $darkGray;
+    background-color: $darkGray;
+}
+
+.essential{
+    color: $white;
+    background: $red;
+    display: inline-block;
+    padding: 3px 5px;
+    margin :5px;
+    border-radius: 2px;
+}
+
+/* エリアラベル */
+.label{
+    display: flex;
+}
+.area {
+    color: $white;
+    padding: 5px;
+    margin: 10px 2px;
+    display: table;
+    font-size: 0.6rem;
+  }
+  
+  .label_area01 {
+    background-color: $green;
+  }
+  
+  .label_area02 {
+    background-color: $darkBlue;
+  }
+  
+  .label_area03 {
+    background-color: $red;
+  }
+  
+  .label_area04 {
+    background-color: $orenge;
+  }
+
+// コンテンツ
+div.list_content{
+    width:calc(100%-200px/3);
+    // padding-left: 15%;
+    @include mq('tab'){
+        margin: 5px auto;
+        width: 100%;
+    }
+}
+
+.photo_area img{
+    width: 95%;
+    margin: 10px;
+}
+
+

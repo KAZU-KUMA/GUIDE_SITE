@@ -1,8 +1,3 @@
-<?php
-/*
-Template Name: テスト
-*/
-?>
 <?php get_header(); ?>
 <main>        
     <!-- コンテンツ100% -->
