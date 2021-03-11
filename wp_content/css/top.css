@@ -45,18 +45,18 @@
   }
 }
 
-/* ヘッダーナビ */
+/* ヘッダーメニュー */
 .header_nav_top ul {
   justify-content: space-around;
   padding: 15px 0;
   background-color: #222;
 }
 
-.header_nav_top li {
+.header_nav_top ul li {
   width: calc((100% - 5px)/2);
 }
 
-.header_nav_top a {
+.header_nav_top ul li a {
   display: block;
   height: 30px;
   color: #fff;
@@ -67,21 +67,22 @@
 }
 
 @media screen and (max-width: 768px) {
-  .header_nav_top a {
+  .header_nav_top ul li a {
     color: #fff;
     border-right: 1px solid #222;
   }
 }
 
-.header_nav_top a:hover {
+.header_nav_top ul li a:hover {
   color: #b86e00;
   border-bottom: none;
 }
 
-.header_nav_top li:last-child a {
+.header_nav_top ul li:last-child a {
   border-right: none;
 }
 
+/* トピック */
 .noticeBox {
   width: 100%;
   margin-bottom: 40px;
@@ -96,7 +97,7 @@
   padding: 10px;
 }
 
-h3 {
+.noticeBox h3 {
   color: #fff;
   text-align: center;
   padding: 5px 0;

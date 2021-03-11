@@ -27,23 +27,6 @@ jQuery(window).on('load', function(){
 	jQuery('.loading').fadeOut();	
 });
 
-// ドロップダウンメニュー
-jQuery(function() {
-  jQuery(".fade > li").hover(
-    function() {
-      jQuery(this)
-        .find(".secondary_nav")
-        .stop(true)
-        .fadeIn(500);
-    },
-    function() {
-      jQuery(this)
-        .find(".secondary_nav")
-        .fadeOut(500);
-    }
-  );
-});
-
 //page topボタン
 jQuery(function(){
   var topBtn=jQuery('#pageTop');
@@ -68,8 +51,9 @@ jQuery(function(){
 //ハンバーガーメニュー
 jQuery(function() {
   　jQuery('.Toggle').click(function() {
+    //ボタン切り替え
   　　jQuery(this).toggleClass('active');
-  
+    //メニュー表示/非表示
   　if (jQuery(this).hasClass('active')) {
   　　jQuery('.NavMenu').addClass('active');　 
   　} else {
@@ -77,4 +61,23 @@ jQuery(function() {
   　}
   　});
   });
+});
+
+// ドロップダウンメニュー
+jQuery(function() {
+  jQuery(".fade > li").hover(
+    //マウスを乗せた時
+    function() {
+      jQuery(this)
+        .find(".secondary_nav")
+        .stop(true)
+        .slideDown(500);
+    },
+    //マウスをはずした時
+    function() {
+      jQuery(this)
+        .find(".secondary_nav")
+        .slideUp(500);
+    }
+  );
 });

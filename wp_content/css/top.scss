@@ -21,9 +21,7 @@ $breakpoints: (
 
 // メディアクエリー
 @mixin mq($breakpoint: sp) {
-
     @media #{map-get($breakpoints, $breakpoint)} {
-  
       @content;
     }
 }
@@ -71,62 +69,55 @@ $breakpoints: (
 }
 
 
-/* ヘッダーナビ */
+/* ヘッダーメニュー */
 .header_nav_top{
     ul{
         justify-content: space-around;
         padding: 15px 0;
         background-color: $darkGray;
-    }
-    
-    li {
-        width: calc((100% - 5px)/2); 
-    }
-    
-    a {
-        display: block;
-        height: 30px;
-        color: $white;
-        text-align: center;
-        line-height: 30px;
-        color: $white;
-        border-right: 1px solid $white;
-        @include mq('sp'){
-            color: $white;
-            border-right: 1px solid $darkGray;
+        li {
+            width: calc((100% - 5px)/2); 
+            a {
+                display: block;
+                height: 30px;
+                color: $white;
+                text-align: center;
+                line-height: 30px;
+                color: $white;
+                border-right: 1px solid $white;
+                @include mq('sp'){
+                    color: $white;
+                    border-right: 1px solid $darkGray;
+                }
+                &:hover{
+                    color:$orenge;
+                    border-bottom: none
+                }
+            }
+            &:last-child a {
+                border-right: none;
+            }
         }
-    }
-    
-    a:hover{
-        color:$orenge;
-        border-bottom: none
-    }
-    
-    li:last-child a {
-        border-right: none;
     }
 }
 
-//　トピック
+/* トピック */
 .noticeBox {
     width: 100%;
     margin-bottom: 40px;
-    // border: 1px solid $darkGray;
     background-color: $white;
     .txtArea {
         text-align: center;
     }
-    
-    
     .top_news, .txtArea, .top_event{
         padding: 10px;
     }
+    h3 {
+        color: $white;
+        text-align: center;
+        padding: 5px 0;
+        background-color: $darkGray;
+    }
 }
 
-h3 {
-    color: $white;
-    text-align: center;
-    padding: 5px 0;
-    background-color: $darkGray;
-}
 

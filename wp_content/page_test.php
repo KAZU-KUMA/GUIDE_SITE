@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: テスト
+Template Name: カスタムテンプレート(固定ページ)
 */
 ?>
 <?php get_header(); ?>

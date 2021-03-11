@@ -26,7 +26,7 @@
             $terms = get_terms( 'event_type', $args );
             foreach( $terms as $term ) :
                 $term_url = get_term_link( $term->term_id, 'event_type' ); ?>
-                <li><a href="<?php echo esc_url( $term_url ); ?>"><?php echo esc_html( $term->name ); ?></a></li>
+                <li><a href="<?=esc_url( $term_url ); ?>"><?=esc_html( $term->name ); ?></a></li>
             <?php endforeach; ?>
         </ul>
     </div>
