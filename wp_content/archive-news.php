@@ -10,7 +10,7 @@
                 <li>ニュース一覧</li>
             </ul>
             <!-- タイトル -->
-            <h1 class="title">ニュース一覧</h1>
+            <h1 class="main_title">ニュース一覧</h1>
             <!-- ページネーション設定、条件指定して記事を取得 -->
             <?php
                 $paged = get_query_var('paged') ?: 1;

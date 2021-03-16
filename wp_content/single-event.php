@@ -17,7 +17,7 @@
                 </div>
                 <div class="main">
                     <!-- イベントタイトル -->
-                    <h1 class="title"><?=esc_html(get_field('event_title'));?></h1>
+                    <h1 class="main_title"><?=esc_html(get_field('event_title'));?></h1>
                     <!-- ラベル -->
                     <?php
                     $areas = get_field('event_area');

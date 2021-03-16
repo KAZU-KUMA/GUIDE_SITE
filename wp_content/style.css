@@ -139,7 +139,7 @@ iframe {
 }
 
 /*----------------------------------------------------*/
-　.title {
+　.main_title {
   font-size: 1.8rem;
   margin: 20px 0;
 }
@@ -409,6 +409,10 @@ nav ul a:hover {
   .Toggle span:nth-child(3) {
     top: 27px;
   }
+}
+
+.breadcrumb {
+  margin-bottom: 16px;
 }
 
 .breadcrumb li {
