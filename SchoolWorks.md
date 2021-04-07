@@ -11,6 +11,7 @@
 [URL]  
 成果物(WEBサイト)：http://153.126.204.74//login.php  
 ソースコード(GitHub)：https://github.com/KAZU-KUMA/CODE_PRODUCTS  
+
 [ログイン情報]  
 管理者としてログイン  
 id: admin  
@@ -18,6 +19,7 @@ pass: admin
 一般ユーザーとしてログイン  
 id: sampleuser  
 pass: password  
+
 [その他]  
 [コンセプトシート](https://docs.google.com/presentation/d/e/2PACX-1vRHZFbUvCaDwx9wNjqnDOhjDXosQs5MxPFbNIf8yLIbBeGkizOBZV3vMD71CurL5IJH3CQYD3V4qWSs/pub?start=false&loop=false&delayms=3000&slide=id.g884934fa08_1_132)  
 [サイトマップ・ワイヤーフレーム](https://docs.google.com/presentation/d/e/2PACX-1vTkiNCIhdDyYe9uCzu5IJLGIW5vTGLBjlwJgMW97oFPt9RmYAY9Z63pC_aS0ZaOWAmB4hpA5n21CTgB/pub?start=false&loop=false&delayms=3000&slide=id.g80b6363779_0_0)  
